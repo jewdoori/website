@@ -1,0 +1,48 @@
+.gobutton {
+    background: rgba(255,255, 255, 0.1);
+    color: white;
+    font-family: inherit;
+    padding: 0.45em;
+    padding-left: 1.0em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 1.5em;
+    border: rgba(255,255,255,0.5);
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    height: 7.5em;
+    width: 25.2em;
+    padding-right: 3em;
+    backdrop-filter: blur(5px);
+  }
+  
+  .iconButton {
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.0em;
+    width: 6.0em;
+    border-radius: 1.5em;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    right: 0.7em;
+    transition: all 0.3s;
+    border: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    background: rgba(255,255, 255, 0.1);
+  }
+  
+  .gobutton:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+  }
+  
+  .gobutton:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+  }
