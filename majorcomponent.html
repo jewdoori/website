@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+                                   initial-scale=1.0
+                                   maximum-scale=0.3
+                                   minimum-scale=0.3">
+    <title>主要结构-Major components</title>
+    <link rel="stylesheet" href="block.css">
+    <link rel="stylesheet" href="button.css">
+    <style>
+         .red {
+            background-color: lightcoral;
+        }
+        .green {
+            background-color: chartreuse;
+        }
+        .blue {
+            background-color: aqua;
+        }
+        .purple {
+            background-color: violet;
+        }
+        @media(min-width:70vmax) {
+        .background {position: absolute;
+                     margin: 0;
+                     top: 1.5vmax;
+                     left: 1.5vmax;
+                     right: 1.5vmax;
+                     bottom: 1.5vmax;
+                     width: auto;
+                     height: auto;
+                     z-index: 1;
+                    }
+        .text {margin: 0;
+               position: relative;
+               height: fit-content;
+               width: 44vmax;
+               top: 1vh;
+               font-size: 1.7vmax;
+               font-weight: 600;
+               font-family: 'Times New Roman', Times, serif;
+               float: left;
+               flex-direction: column;
+               background-color:white;}
+        .head {font-family: 'Times New Roman', Times, serif;
+               color: red;
+               font-weight: 600;
+               font-size: 4vh;
+               height: fit-content;
+               width: fit-content;
+        }
+        .pic {position: relative;
+                  display: flex;
+                  height: auto;
+                  width: auto;
+                  padding: 0;
+                  border: 0;
+                  right:10px;
+                  margin-top: 1vh;
+                  object-fit: contain;
+                  overflow: hidden;
+                  max-width: 50vmax;
+                  margin-left: 10px;
+
+        }
+        .paper {position: absolute;
+                display: flex;
+                margin: 0;
+                     top: 50px;
+                     left: 10px;
+                     right: 10px;
+                     bottom: 30%;                   
+                     width: auto;
+                     height: auto;
+                     z-index: 3;
+                     border-radius: 0.5%;
+                     background-color: white;
+                     padding: 0;
+                     margin: 0;
+        }
+    }
+        @media(max-width:70vmax) {
+            .column {
+                display: flex;
+                flex-direction: column;
+            }
+            .pic {position: relative;
+                  display: flex;
+                  width: 44vmax;
+                  height:28.75vmax ;
+                  margin-top: 5vh;
+            }
+            .text {position: relative;
+                margin: 0;
+               position: relative;
+               height: fit-content;
+               width: 44vmax;
+               top: 1vh;
+               font-size: 1.7vmax;
+               font-weight: 600;
+               font-family: 'Times New Roman', Times, serif;
+               float: left;
+               flex-direction: column;
+               background-color:white;}                                   
+            
+            .background {
+                position: absolute;
+                     margin: 0;
+                     top: 1.5vmax;
+                     left: 1.5vmax;
+                     right: 1.5vmax;
+                     bottom: 1.5vmax;
+                     width: auto;
+                     height: auto;
+                     z-index: 1;                
+            }
+            .paper{bottom: 120vh;
+                top: 50px;
+                     left: 10px;
+                     right: 10px;
+                     top: 50vh;                   
+                     width: auto;
+                     height:fit-content;
+                     border-radius: 1%;
+                     padding: 0;
+                
+            }
+            .head {font-family: 'Times New Roman', Times, serif;
+               color: red;
+               font-weight: 600;
+               font-size: 4vh;
+               height: fit-content;
+               width: fit-content;
+               padding: 0;
+               margin: 0;
+        }
+           
+        }
+
+        
+    </style>
+</head>
+<body style="background-color: skyblue;">
+    <div class="background block" >
+      <div class="paper column"
+           style="background-color: white;">
+        <div class="text">
+                <h1 class="head">Major components(fixed-wing)<br />
+                    主要结构(固定翼飞机)</h1>
+                <p class="text">Although airplanes are designed for a variety of purposes, </p>
+                <p class="text">尽管各种飞机根据多种不同的用途而设计，但大部分飞</p>
+                <p class="text">most of them have same major components. The overall</p>
+                <p class="text">机有着相同的主要结构。&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&thinsp;飞机总体的</p>
+                <p class="text">characteristics are largely determined by the original design</p>
+                <pre class="text">特性主要取决于设计目标。                                 </pre>                               
+                <p class="text">objectives. Most airplane structures include a <mark>fuselage</mark>, </p>
+                <p class="text">大部分飞机的结构包括：<mark>机身</mark>、<mark class="green">机翼</mark>、<mark class="red">尾翼</mark>、<mark class="blue">起落架</mark></p>
+                <p class="text"><mark class="green">wings</mark>, an <mark class="red">empennage</mark>, <mark class="blue">landing gear</mark>, and a <mark class="purple">powerplant</mark>.</p>
+                <pre class="text">和<mark class="purple">动力装置</mark>。                                                           </pre>  
+              
+        </div>
+      
+        <div class="column pic" >
+                    <img src="majorcomponent.png" class="pic">
+        </div>
+      
+      </div>
+        <div>
+            <a href="markmap.html" 
+               title="思维导图" 
+               style="text-decoration: none;">
+                    <button class="gobutton" 
+                            style="position:absolute;
+                                   z-index: 301;
+                                   display: flex;
+                                   margin:auto;
+                                   bottom: 3vmax;
+                                   left: 0;
+                                   right: 0;
+                       "> 
+            <div style="font-size: 35px;
+                        font-weight: bold;
+                        text-align: center;">
+                返回思维导图
+            </div>
+            <div class="iconButton">
+              <img src="arrow-right-line-w.svg" 
+                   viewBox="0 0 24 24" 
+                   width="48" 
+                   height="48"
+                   style="color: white;">
+                <path fill="none" 
+                      d="M0 0h24v24H0z">
+                </path>
+                <path fill="currentColor" 
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
+                </path>
+            </img>
+            </div>
+        </button>
+    </a>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
