@@ -120,9 +120,29 @@
             margin: 0;
             font-weight: 600;
         }
+        .pic {
+            display: flex;
+            border: 0;
+            padding: 0;
+            border: none !important;
+            position: absolute;
+            text-align: center;
+            margin-left: 100px;
+            top:90px;
+            overflow: hidden;
+            z-index: -1;}
         @media (max-width:600px) {
         .left {
             display: none;
+        }
+        .text {
+            margin-right: 20px;
+        }
+        .pic {
+            margin-left:50px;
+        }
+        .headtext {
+            margin-left:150px;
         }
         }
     </style>
@@ -132,17 +152,7 @@
     </div>
     <div class="mainhead">
         <img src="jewdoor.svg"
-             style="display: flex;
-                    border: 0;
-                    padding: 0;
-                    border: none !important;
-                    position: absolute;
-                    text-align: center;
-                    margin-left: 100px;
-                    top:90px;
-                    overflow: hidden;
-                    z-index: -1;
-                    ">
+             class="pic">
         <h1 class="headtext">
             猪蛋飞行</br>
             jewdoor flight
