@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0
+                                   min-width=0.5
+                                   max-width=0.5">
+    <title>机翼-Wings</title>
+    <style>
+        .upbox {
+            background-color: skyblue;
+            padding: 0;
+            margin: 0;
+            right: 0;
+            height: 30px;
+            margin-top: 30px;
+        }
+        .mainhead{
+            background-color: 0;
+            padding: 0;
+            margin: 0;
+            height: 130px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border: solid rgba(180, 178, 178, 0.5) 1px;
+            
+        }
+        .body{
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            height: fit-content;
+            width: 100%;
+            border-radius: 8px;
+            border: solid rgba(180, 178, 178, 0.5) 1px;
+            display: flex;
+        }
+        .left {
+            margin-left: 80px;
+            width: auto fit-content;
+            height: 100vh;
+            z-index: 3;
+            background-color: white;
+            flex: 1;
+            max-width: 310px;
+        }
+        .right{
+            margin-left: 20px;
+            display:flex;
+            flex-direction: column;
+            flex: 1;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .headtext{
+            position: relative;
+            margin-left: 200px;
+            padding: 0;
+            font-size: 25px;
+            color: rgb(31, 31, 149);
+            user-select: none;
+            top: 10px;
+        }
+        .daohang{
+            float:right;
+            align-items: center;
+            text-align: left;
+            height: 60px;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            border-color: transparent;
+            width: 100%;
+            left: 0;
+            right: 0;
+            display: block;
+            border-bottom: solid rgba(180, 178, 178, 0.5) 1px;
+            font-size: 20px;
+            border-top: solid rgba(180, 178, 178, 0.5) 1px;
+        }
+        .daohangbutton {
+            text-decoration: none;
+            display: block;
+            color: rgb(31, 31, 149);
+            margin-left: 20px;
+        }
+        .daohangbelow{
+            float:right;
+            align-items: center;
+            text-align: left;
+            height: 60px;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            border-color: transparent;
+            width: 100%;
+            left: 0;
+            right: 0;
+            display: block;
+            border-bottom: solid rgba(180, 178, 178, 0.5) 1px;
+            font-size: 20px;
+        }
+        .hover:hover {
+            color: rgb(7, 7, 110);
+        }
+        .text {
+            margin-left: 20px;
+            margin-right: 80px;
+            font-size: 20px;
+        }
+        .texthead {
+            margin: 0;
+            font-weight: 600;
+        }
+        @media (max-width:600px) {
+        .left {
+            display: none;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="upbox">
+    </div>
+    <div class="mainhead">
+        <img src="jewdoor.svg"
+             style="display: flex;
+                    border: 0;
+                    padding: 0;
+                    border: none !important;
+                    position: absolute;
+                    text-align: center;
+                    margin-left: 100px;
+                    top:90px;
+                    overflow: hidden;
+                    z-index: -1;
+                    ">
+        <h1 class="headtext">
+            猪蛋飞行</br>
+            jewdoor flight
+        </h1>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div style="display: block;
+                        margin-top: 70px;">
+                <button  class="daohang hover">
+                    <a href="markmap.html" 
+                       class="daohangbutton hover">返回思维导图</a>
+                </button>
+            </div>
+            <div style="display: block;
+                        margin-top: 0px;">
+                <button  class="daohangbelow hover">
+                    <a href="index.html" 
+                       class="daohangbutton hover">返回主页</a>
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="texthead">
+                Wings</br>
+                机翼
+            </h1>
+            <h2 style="margin-left: 10px;">
+                Wing Configuration</br>
+                机翼布局
+            </h2>
+            <p class="text">
+                Wings are airfoils that, when moved rapidly through the air, 
+                create lift. They are built in many shapes and sizes. Wing design 
+                can vary to provide certain desirable flight characteristics. 
+                Control at various operating speeds, the amount of lift generated, 
+                balance, and stability all change as the shape of the wing is 
+                altered. Both the leading edge and the trailing edge of the wing 
+                may be straight or curved, or one edge may be straight and the 
+                other curved. One or both edges may be tapered so that the wing 
+                is narrower at the tip than at the root where it joins the 
+                fuselage. The wing tip may be square, rounded, or even pointed. 
+                [Figure 1-1] shows a number of typical wing leading and trailing 
+                edge shapes.
+            </p>
+            <p class="text">
+                The wings of an aircraft can be attached to the fuselage at 
+                the top, mid-fuselage, or at the bottom. They may extend 
+                perpendicular to the horizontal plane of the fuselage or 
+                can angle up or down slightly. This angle is known as the 
+                wing dihedral. The dihedral angle affects the lateral 
+                stability of the aircraft. [Figure 1-2] shows some common 
+                wing attach points and dihedral angle.
+            </p>
+            <h2 style="margin-left: 10px;">
+                Wing Structure</br>
+                机翼结构
+            </h2>
+            <p class="text">
+                The wings of an aircraft are designed to lift it into 
+                the air. Their particular design for any given 
+                aircraft depends on a number of factors, such as size, 
+                weight, use of the aircraft, desired speed in flight and 
+                at landing, and desired rate of 
+                climb. The wings of aircraft are designated left and right,
+                corresponding to the left and right sides of the operator when
+                seated in the flight deck. [Figure 1-3]
+            </p>
+            <p class="text">
+                Often wings are of full cantilever design. This means they
+                are built so that no external bracing is needed. They are
+                supported internally by structural members assisted by the
+                skin of the aircraft. Other aircraft wings use external struts
+                or wires to assist in supporting the wing and carrying the
+                aerodynamic and landing loads. Wing support cables and
+                struts are generally made from steel. Many struts and their
+                attach fittings have fairings to reduce drag. Short, nearly
+                vertical supports called jury struts are found on struts that
+                attach to the wings a great distance from the fuselage. This
+                serves to subdue strut movement and oscillation caused by
+                the air flowing around the strut in flight. [Figure 1-4] shows
+                samples of wings using external bracing, also known as
+                semicantilever wings. Cantilever wings built with no external 
+                bracing are also shown.
+            </p>
+            <p class="text">
+                Aluminum is the most common material from which to
+                construct wings, but they can be wood covered with fabric,
+                and occasionally a magnesium alloy has been used. Moreover,
+                modern aircraft are tending toward lighter and stronger
+                materials throughout the airframe and in wing construction.
+                Wings made entirely of carbon fiber or other composite
+                materials exist, as well as wings made of a combination of
+                materials for maximum strength to weight performance.
+            </p>
+            <p class="text">
+                The internal structures of most wings are made up of spars
+and stringers running spanwise and ribs and formers or
+bulkheads running chordwise (leading edge to trailing edge).
+The spars are the principle structural members of a wing.
+They support all distributed loads, as well as concentrated
+weights such as the fuselage, landing gear, and engines. The
+skin, which is attached to the wing structure, carries part of
+the loads imposed during flight. It also transfers the stresses
+to the wing ribs. The ribs, in turn, transfer the loads to the
+wing spars. [Figure 1-5]
+            </p>
+            <p class="text">
+                In general, wing construction is based on one of three
+fundamental designs:
+            </p>
+            <p class="text" style="margin-left:40px ;">1. Monospar</p>
+            <p class="text" style="margin-left:40px ;">2. Multispar</p>
+            <p class="text" style="margin-left:40px ;">3. Box beam</p>
+            <p class="text">The monospar wing incorporates only one main spanwise or
+                longitudinal member in its construction. Ribs or bulkheads
+                supply the necessary contour or shape to the airfoil. Although
+                the strict monospar wing is not common, this type of design
+                modified by the addition of false spars or light shear webs
+                along the trailing edge for support of control surfaces is
+                sometimes used.
+            </p>
+            <p class="text">
+                The multispar wing incorporates more than one main
+longitudinal member in its construction. To give the wing
+contour, ribs or bulkheads are often included.
+            </p>
+            <p class="text">
+                The box beam type of wing construction uses two main
+longitudinal members with connecting bulkheads to
+furnish additional strength and to give contour to the wing.
+[Figure 1-6] A corrugated sheet may be placed between
+the bulkheads and the smooth outer skin so that the wing
+can better carry tension and compression loads. In some
+cases, heavy longitudinal stiffeners are substituted for the
+upper surface of the wing and stiffeners on the lower surface
+corrugated sheets. A combination of corrugated sheets on the
+upper surface of the wing and stiffeners on the lower surface
+is sometimes used. Air transport category aircraft often utilize
+box beam wing construction.
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
