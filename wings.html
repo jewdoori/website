@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0
+                                   min-width=0.5
+                                   max-width=0.5">
+    <title>机翼-Wings</title>
+    <style>
+        .upbox {
+            background-color: skyblue;
+            padding: 0;
+            margin: 0;
+            right: 0;
+            height: 30px;
+            margin-top: 30px;
+        }
+        .mainhead{
+            background-color: 0;
+            padding: 0;
+            margin: 0;
+            height: 130px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border: solid rgba(180, 178, 178, 0.5) 1px;
+            
+        }
+        .body{
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            height: fit-content;
+            width: 100%;
+            border-radius: 8px;
+            border: solid rgba(180, 178, 178, 0.5) 1px;
+            display: flex;
+        }
+        .left {
+            margin-left: 80px;
+            width: auto fit-content;
+            height: 100vh;
+            z-index: 3;
+            background-color: white;
+            flex: 1;
+            max-width: 310px;
+        }
+        .right{
+            margin-left: 20px;
+            display:flex;
+            flex-direction: column;
+            flex: 1;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        .headtext{
+            position: relative;
+            margin-left: 200px;
+            padding: 0;
+            font-size: 25px;
+            color: rgb(31, 31, 149);
+            user-select: none;
+            top: 10px;
+        }
+        .daohang{
+            float:right;
+            align-items: center;
+            text-align: left;
+            height: 60px;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            border-color: transparent;
+            width: 100%;
+            left: 0;
+            right: 0;
+            display: block;
+            border-bottom: solid rgba(180, 178, 178, 0.5) 1px;
+            font-size: 20px;
+            border-top: solid rgba(180, 178, 178, 0.5) 1px;
+        }
+        .daohangbutton {
+            text-decoration: none;
+            display: block;
+            color: rgb(31, 31, 149);
+            margin-left: 20px;
+        }
+        .daohangbelow{
+            float:right;
+            align-items: center;
+            text-align: left;
+            height: 60px;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            border-color: transparent;
+            width: 100%;
+            left: 0;
+            right: 0;
+            display: block;
+            border-bottom: solid rgba(180, 178, 178, 0.5) 1px;
+            font-size: 20px;
+        }
+        .hover:hover {
+            color: rgb(7, 7, 110);
+        }
+        .text {
+            margin-left: 20px;
+            margin-right: 80px;
+            font-size: 20px;
+        }
+        .texthead {
+            margin: 0;
+            font-weight: 600;
+        }
+        .textpic {
+            max-width: 95%;
+            height: auto;
+        }
+        .lowerbox{
+            background-color: darkslategray;
+            padding: 0;
+            margin: 0;
+            right: 0;
+            height: 350px;
+        }
+        .bottombox{
+            background-color: skyblue;
+            padding: 0;
+            margin: 0;
+            right: 0;
+            height: 120px;
+        }
+        .red {
+            background-color: lightcoral;
+        }
+        .green {
+            background-color: chartreuse;
+        }
+        .blue {
+            background-color: aqua;
+        }
+        .purple {
+            background-color: violet;
+        }
+        @media (max-width:600px) {
+        .left {
+            display: none;
+        }
+        .text {
+            margin-right: 20px;
+        }
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden !important;">
+    <div class="upbox">
+    </div>
+    <div class="mainhead">
+        <img src="jewdoor.svg"
+             style="display: flex;
+                    border: 0;
+                    padding: 0;
+                    border: none !important;
+                    position: absolute;
+                    text-align: center;
+                    margin-left: 100px;
+                    top:90px;
+                    overflow: hidden;
+                    z-index: -1;
+                    ">
+        <h1 class="headtext">
+            猪蛋飞行</br>
+            jewdoor flight
+        </h1>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div style="display: block;
+                        margin-top: 70px;">
+                <button  class="daohang hover">
+                    <a href="markmap.html" 
+                       class="daohangbutton hover">返回思维导图</a>
+                </button>
+            </div>
+            <div style="display: block;
+                        margin-top: 0px;">
+                <button  class="daohangbelow hover">
+                    <a href="index.html" 
+                       class="daohangbutton hover">返回主页</a>
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="texthead">
+                Wings</br>
+                机翼
+            </h1>
+            <h2 style="margin-left: 10px;">
+                Wing Configuration</br>
+                机翼布局
+            </h2>
+            <p class="text">
+                Wings are <mark class="red">airfoils</mark> that, when moved rapidly through the air, 
+                create <mark>lift</mark>. They are built in many shapes and sizes. Wing design 
+                can vary to provide certain desirable flight characteristics. 
+                Control at various operating speeds, the amount of lift generated, 
+                <mark class="blue">balance</mark>, and <mark class="green">stability</mark> all change as the shape of the wing is 
+                altered. Both the <mark class="purple">leading edge</mark> and the <mark class="red">trailing edge</mark> of the wing 
+                may be straight or curved, or one edge may be straight and the 
+                other curved. One or both edges may be tapered so that the wing 
+                is narrower at the <mark>tip</mark> than at the <mark class="blue">root</mark> where it joins the 
+                fuselage. The wing tip may be square, rounded, or even pointed. 
+                [Figure 1-1] shows a number of typical wing leading and trailing 
+                edge shapes.
+            </p>
+            <p class="text">
+                机翼由在空气中快速移动产生<mark>升力</mark>的<mark class="red">翼型</mark>组成。不同的机翼形状大小各不相同。
+                机翼的设计根据所需求的特性而不同。在不同飞行速度下的操纵、产生的升力大小、<mark class="blue">平衡</mark>
+                和<mark class="green">稳定性</mark>，都根据机翼的形状的变化而变化。机翼的<mark class="purple">前缘</mark>和<mark class="red">后缘</mark>可以是都是直的
+                ，或是都弯曲的，也可以是一个直的，一个是弯曲的。前缘和后缘，或是其中单独一个，
+                都可以渐缩形成<mark>翼尖</mark>比<mark class="blue">翼根</mark>与机身连接处窄的机翼形状。
+                翼尖可以做成矩形、弧形甚至是尖头的。[图1-1] 列出了几个典型机翼的前缘和后缘的形状。  
+            </p>
+            <div>
+            <img src="wingsshape.png"
+                 class="textpic">
+            </div>
+            <p style="margin: 0;">图1-1</p>
+            <p class="text">
+                The wings of an aircraft can be attached to the fuselage at 
+                the top, mid-fuselage, or at the bottom.
+                These designs are referred to as high-, mid-,
+and low-wing, respectively. The number of wings can also
+vary. Airplanes with a single set of wings are referred to as
+<mark class="red">monoplanes</mark>, while those with two sets are called <mark>biplanes</mark>.
+                They may extend 
+                perpendicular to the horizontal plane of the fuselage or 
+                can angle up or down slightly. This angle is known as the 
+                wing dihedral. The <mark class="blue">dihedral angle</mark> affects the <mark class="green">lateral 
+                stability</mark> of the aircraft. [Figure 1-2] shows some common 
+                wing attach points and dihedral angle. [Figure 1-2] shows specific types of monoplane and biplane.
+            </p>
+            <p class="text">
+                机翼可安装在机身的上部，中部或是底部。这些机翼位置设计分别被称作上、中、下单翼。机翼对数也有不同设计，只有一对机翼的飞机被称作<mark class="red">单翼机</mark>，有两对的被称作<mark>双翼机</mark>。机翼水平方向垂直穿过机身，
+                或略微向上或向下倾斜一个角度。这个角度叫机翼上反角。<mark class="blue">上反角</mark>影响
+                飞机的<mark class="green">横侧稳定性</mark>。[图 1-2]列出了几个常见的机翼安装位置和上反角。[图1-3]列出了特定型号的单翼机和双翼机。
+            </p>
+            <div>
+                <img src="wingsposition.png"
+                     class="textpic">
+            </div>
+            <p style="margin: 0;">图1-2</p>
+            <div>
+                <img src="mbplane.png"
+                     class="textpic">
+            </div>
+            <p style="margin: 0;">图1-3 单翼机（左）双翼机（右）</p>
+            <p class="text">
+                The wings of aircraft are designated left and right,
+                corresponding to the left and right sides of the operator when
+                seated in the <mark class="red">flight deck</mark>. [Figure 1-4]
+            </p>
+            <p class="text">
+                飞机的机翼分为左翼和右翼，与<mark class="red">驾驶舱</mark>左右坐驾驶员的位置相对应。[图1-4]
+            </p>
+            <div>
+                <img src="lrwings.png"
+                     class="textpic">
+            </div>
+            <p style="margin: 0;">图1-4</p>
+            <p class="text">
+                Often wings are of <mark class="red">full cantilever</mark> design. This means they
+                are built so that no external bracing is needed. They are
+                supported internally by structural members assisted by the
+                skin of the aircraft. Other aircraft wings use external struts
+                or wires to assist in supporting the wing and carrying the
+                <mark>aerodynamic and landing loads</mark>. Wing support cables and
+                struts are generally made from steel. Many struts and their
+                attach fittings have <mark class="blue">fairings</mark> to reduce drag. Short, nearly
+                vertical supports called jury struts are found on struts that
+                attach to the wings a great distance from the fuselage. This
+                serves to subdue strut movement and oscillation caused by
+                the air flowing around the strut in flight. [Figure 1-5] shows
+                samples of wings using external bracing, also known as
+                semicantilever wings. Cantilever wings built with no external 
+                bracing are also shown.
+            </p>
+            <p class="text">
+                大部分机翼采用<mark class="red">悬臂式</mark>设计，这意味着这些机翼不需要外部支撑。它们
+                由内部结构支撑，并由飞机蒙皮辅助支撑。其他的飞机机翼采用外部撑杆
+                或钢索辅助支撑机翼，并承受<mark>空气动力载荷和着陆载荷</mark>。支撑钢索和撑杆
+                一般由钢铁制成。很多撑杆和它们的接头安装有<mark class="blue">整流罩</mark>来减小阻力。短小，
+                并近乎垂直的支撑杆叫辅助撑杆，辅助撑杆安装在撑杆离机身很远的位置上并链接机翼。
+                这是为了减小撑杆在飞行中由空气流动的位移和振动。[图1-5]例举了使用外部
+                支撑的飞机，又叫半悬臂式机翼，以及没有外部支撑的悬臂式机翼。
+            </p>
+            <div>
+                <img src="cantileverwing.png"
+                     class="textpic">
+            </div>
+            <p style="margin: 0;
+                      margin-bottom: 40px;">图1-5</p>
+        </div>
+    </div>
+    <div class="lowerbox">
+
+    </div>
+    <div class="bottombox">
+
+    </div>
+</body>
+</html>
