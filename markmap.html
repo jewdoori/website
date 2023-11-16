@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.3/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.15.3/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.3/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+          const markmap = getMarkmap();
+          window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+        })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"<strong>飞行知识-Aeronautical knowledge</strong>","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"<strong>飞行原理-principles of flight</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[2,3]},"content":"<strong>基础空气动力学-Basic aerodynamics</strong>","children":[{"type":"list_item","depth":3,"payload":{"lines":[3,4]},"content":"<a href=\"air.html\"><strong>空气-Air</strong></a>","children":[]}]}]},{"type":"heading","depth":1,"payload":{"lines":[4,5]},"content":"<strong>飞机结构-Aircraft Construction</strong>","children":[{"type":"list_item","depth":2,"payload":{"lines":[5,6]},"content":"<a href=\"majorcomponent.html\"><strong>主要结构(固定翼飞机)-Major components(fixed-wing)</strong></a>","children":[{"type":"list_item","depth":3,"payload":{"lines":[6,7]},"content":"<a href=\"fuselarge.html\"><strong>机身-Fuselarge</strong></a>","children":[]},{"type":"list_item","depth":3,"payload":{"lines":[7,8]},"content":"<a href=\"wings.html\"><strong>机翼-Wings</strong></a>","children":[{"type":"list_item","depth":4,"payload":{"lines":[8,9]},"content":"<a href=\"wingstructure.html\"><strong>机翼结构-Wing structure</strong></a>","children":[{"type":"list_item","depth":5,"payload":{"lines":[9,10]},"content":"<a href=\"wingspars.html\"><strong>翼梁-Wing spars</strong></a>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[10,11]},"content":"<a href=\"wingribs.html\"><strong>翼肋-Wing ribs</strong></a>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[11,12]},"content":"<a href=\"wingskin.html\"><strong>机翼蒙皮-Wing skin</strong></a>","children":[]}]},{"type":"list_item","depth":4,"payload":{"lines":[12,13]},"content":"<strong>其他机翼结构-Other wing features</strong>","children":[{"type":"list_item","depth":5,"payload":{"lines":[13,14]},"content":"<a href=\"wingler.html\"><strong>翼梢小翼-Winglet</strong></a>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[14,15]},"content":"<a href=\"vortexgenerator.html\"><strong>涡流发生器-Vortex generator</strong></a>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[15,16]},"content":"<a href=\"stallfence.html\"><strong>Stall fence</strong></a>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[16,17]},"content":"<a href=\"gap.html\"><strong>Gap seal</strong></a>","children":[]}]}]},{"type":"list_item","depth":3,"payload":{"lines":[17,18]},"content":"<a href=\"empennage.html\"><strong>尾翼-Empennage</strong></a>","children":[]},{"type":"list_item","depth":3,"payload":{"lines":[18,19]},"content":"<a href=\"landinggear.html\"><strong>起落架-Landing gear</strong></a>","children":[]},{"type":"list_item","depth":3,"payload":{"lines":[19,20]},"content":"<a href=\"powerplant.html\"><strong>动力装置-Powerplant</strong></a>","children":[]}]},{"type":"list_item","depth":2,"payload":{"lines":[20,21]},"content":"<strong>操纵面-Flight control surfaces</strong>","children":[{"type":"list_item","depth":3,"payload":{"lines":[21,22]},"content":"<a href=\"maincontrolsurface.html\"><strong>主操纵面-Primary/ main flight control surfaces</strong></a>","children":[{"type":"list_item","depth":4,"payload":{"lines":[22,23]},"content":"<a href=\"ailerons.html\"><strong>副翼-Ailerons</strong></a>","children":[]},{"type":"list_item","depth":4,"payload":{"lines":[23,24]},"content":"<a href=\"elevator.html\"><strong>升降舵-Elevator</strong></a>","children":[{"type":"list_item","depth":5,"payload":{"lines":[24,25]},"content":"<a href=\"stabilator.html\"><strong>全动平尾-Stabilator</strong></a>","children":[]}]},{"type":"list_item","depth":4,"payload":{"lines":[25,26]},"content":"<a href=\"rudder.html\"><strong>方向舵-Rudder</strong></a>","children":[]},{"type":"list_item","depth":4,"payload":{"lines":[26,27]},"content":"<a href=\"ruddervator.html\"><strong>方向升降舵-Ruddervator</strong></a>","children":[]}]},{"type":"list_item","depth":3,"payload":{"lines":[27,28]},"content":"<a href=\"auxiliarycontrolsurface.html\"><strong>辅助操纵面-Secondary/ auxiliary control surfaces</strong></a>","children":[{"type":"list_item","depth":4,"payload":{"lines":[28,29]},"content":"<a href=\"flaps.html\"><strong>襟翼-Flaps</strong></a>","children":[]},{"type":"list_item","depth":4,"payload":{"lines":[29,30]},"content":"<a href=\"slat.html\"><strong>缝翼-Slat</strong></a>","children":[]},{"type":"list_item","depth":4,"payload":{"lines":[30,31]},"content":"<a href=\"spsb.html\"><strong>扰流板和减速板-Spoilers &amp; speed brakes</strong></a>","children":[]},{"type":"list_item","depth":4,"payload":{"lines":[31,32]},"content":"<a href=\"tabs.html\"><strong>配平片-Tabs</strong></a>","children":[{"type":"list_item","depth":5,"payload":{"lines":[32,33]},"content":"<strong>调整片-Trim tab</strong>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[33,34]},"content":"<strong>平衡片-Balance tab</strong>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[34,35]},"content":"<strong>伺服片-Servo tab</strong>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[35,36]},"content":"<strong>反平衡/反伺服片-Anti balance/ anti servo tabs</strong>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[36,37]},"content":"<strong>弹簧片-Spring tab</strong>","children":[]},{"type":"list_item","depth":5,"payload":{"lines":[37,38]},"content":"<strong>地面调整片-Ground ajustable tab</strong>","children":[]}]}]}]}]}]},{})</script>
+</body>
+</html>
