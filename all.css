@@ -106,6 +106,11 @@
     margin-right: 80px;
     font-size: 20px;
 }
+.smalltext{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 19px;
+}
 .texthead {
     margin: 0;
     font-weight: 600;
