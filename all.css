@@ -120,9 +120,12 @@
     height: auto;
 }
 .equation {
-    font-size: 40px;
-    margin: 40px;
-    text-align: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        line-height: 40px;
+        text-align: center;
+        font-size: 40px;
 }
 .h3 {
     margin-left: 20px;
@@ -171,7 +174,7 @@
 .purple {
     background-color: violet;
 }
-@media (max-width:600px) {
+@media (max-width:850px) {
 .left {
     display: none;
 }
@@ -205,5 +208,13 @@
 }
 .mainhead{
     height: 80px;
+}
+.equation {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    font-size:clamp(1rem, 0.489rem + 10.5vw, 1.2rem);
 }
 }
