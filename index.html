@@ -1,135 +1,79 @@
 <!DOCTYPE html>
 <html lang="zh-cmn">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" 
-              content="width=device-width, 
-                       maximum-scale=0.4,
-                       minimum-scale=0.4
-                       initial-scale=1.0">
-        
-        <title>猪蛋飞行</title>
-
-        <link rel="stylesheet" href="airplane.css">
-        <link rel="stylesheet" href="button.css">
-
-        <h1 style="position: absolute; 
-                   top:3%; 
-                   left:15%; 
-                   color:white; 
-                   font-size: 85px;
-                   user-select: none;
-                   z-index: 300;
-                   display: flex;">
-            <div class="shadow">
-                猪蛋飞行
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0
+                                   min-width=0.5
+                                   max-width=0.5">
+    <title>猪蛋飞行-Jewdoor flight</title>
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <link rel="icon" href="jewdoor.svg" sizes="16x16">
+</head>
+<body style="overflow-x: hidden !important;">
+    <div class="upbox">
+    </div>
+    <div class="mainhead">
+        <img src="jewdoor.svg"
+             class="headpic">
+        <h1 class="headtext">
+            猪蛋飞行</br>
+            jewdoor flight
         </h1>
-        <h2 style="position:absolute;
-        top:25%; left:20%;
-        color:white;
-        font-size: 40px;
-        user-select: none;
-        z-index: 300;
-        display: flex;">
-            <div class="shadow">
-                一个致力于分享航空知识的个人网站
+    </div>
+    <div class="indexbody">
+                 <div class="indexpic">
+                    <div class="indexpicblur">
+                       <div class="indexpicfont">
+                          致力于分享航空知识的个人网站
+                       </div>
+                    </div>
+                 </div>         
+            <div class="flex column">
+                 <div class="indexleftrightmargin">
+                 </div>   
+                 <div class="indexdaohangsheet">
+                    <h2 class="indexdaohangheadfont">
+                        导航
+                    </h2>         
+                    <button  class="indexdaohang hover">
+                        <a href="markmap.html" 
+                           class="daohangbutton hover">思维导图
+                        </a>
+                    </button>
+                    <button  class="indexdaohang hover">
+                        <a href="download.html" 
+                           class="daohangbutton hover">文件下载
+                        </a>
+                    </button>
+                 </div>
+                 <div class="indexpreface">
+                    <h2 class="indexprefaceheadfont">关于猪蛋飞行</h1>
+                    <p class="indexprefacefont">
+                        这个网站全部的飞行有关内容绝大多是来自FAA手册
+                        （甚至页面设计也很大程度上参考了FAA官网），
+                        并且提供中英对照，主要是希望使用本网站的用户，
+                        在无论是为了参加PEPEC考试，出国学飞，或是出国从事飞行工作而进行英语准备过程中，
+                        能够更方便的学习航空英语。
+                    </p>
+                 </div>
+                 <div class="indexleftrightmargin">
+                 </div>
             </div>
-        </h2>
-    </head>
-
-
-
-    <body>
-        <a href="markmap.html" 
-           title="思维导图" 
-           style="text-decoration: none;">
-            <button class="gobutton" 
-                    style="position:absolute;
-                           z-index: 301;
-                           transform: translate(50%,50%);
-                           display: flex; 
-                           margin:0 auto;
-                           bottom:-40vmax;"> 
-                <div style="font-size: 35px;
-                            font-weight: bold;
-                            text-align: center;">
-                    思维导图go
-                </div>
-                <div class="iconButton">
-                  <svg xmlns="http://www.w3.org/2000/svg" 
-                       viewBox="0 0 24 24" 
-                       width="48" 
-                       height="48">
-                    <path fill="none" 
-                          d="M0 0h24v24H0z">
-                    </path>
-                    <path fill="currentColor" 
-                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z">
-                    </path>
-                  </svg>
-                </div>
-            </button>
-        </a>
-    </body>
-
-
-
-
-
-<div class="frame">
-    <div class="plane-container">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
-    xml:space="preserve" class="plane">
-    <polygon fill="#D8D8D8" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  "/>
-    <polygon fill="#C4C4C3" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   "/>
-    </svg></a>
-    
     </div>
+
+
+
+
+
+            <div class="blankbox"></div>
+        </div>
     </div>
-    <div class="clouds">
-    
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
-    height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud big front slowest">
-    <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
-    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
-    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
-    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
-    </svg>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
-    height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant smaller">
-    <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
-    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
-    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
-    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
-    </svg>
-    
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
-    height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud small slow">
-    <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
-    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
-    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
-    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
-    </svg>
-    
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
-    height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant super-slow massive">
-    <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
-    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
-    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
-    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
-    </svg>
-    
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
-    height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud slower">
-    <path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
-    c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
-    C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
-    S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
-    </svg>
-    
+    <div class="lowerbox">
+
     </div>
-    
-    </html>
-    
+    <div class="bottombox">
+
+    </div>
+</body>
+</html>
