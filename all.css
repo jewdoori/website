@@ -262,6 +262,20 @@
 .indexleftrightmargin{
     width: 20%;
 }
+.center {
+    text-align: center;
+    align-items: center;
+}
+.table {
+    margin: 20px;
+    margin-right: 80px;
+    font-size: 20px;
+    text-align: center;
+}
+.tdleft {
+    text-align: left;
+    padding: 10px;
+}
 @media (max-width:850px) {
 .left {
     display: none;
@@ -269,6 +283,9 @@
 .text {
     margin-right: 20px;
     margin-left: 20px;
+}
+.table {
+    margin: 20px;
 }
 .headpic {
     margin-left: 20px;
@@ -335,6 +352,9 @@
     padding-top: 10px;
     margin: 0;
 }
+.table{
+    font-size: 15px;
+}
 }
 @media (max-width:550px) {
 .column{
@@ -350,9 +370,15 @@
     width: 100%;
     box-sizing: border-box;
 }
+.table{
+    font-size: 10px;
+}
 }
 @media (max-width:450px) {
 .indexpicblur{
     top: 50px;
+}
+.table{
+    font-size: 10px;
 }
 }
