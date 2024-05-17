@@ -278,16 +278,24 @@
     right: 0;
 }
 .red {
-    background-color: lightcoral;
+    background-color: rgb(255, 51, 0);
+    color: white;
+}
+.yellow{
+    background-color: rgb(255, 204, 0);
+    color: white;
 }
 .green {
     background-color: chartreuse;
+    color: white;
 }
 .blue {
     background-color: aqua;
+    color: white;
 }
 .purple {
     background-color: violet;
+    color: white;
 }
 .flex{
     display: flex;
