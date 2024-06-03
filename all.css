@@ -325,10 +325,10 @@
     padding: 10px;
 }
 .svgdiv {
-    margin: 5px;
+    margin: 20px;
     height: auto;
     width: auto;
-    min-width:200px;
+    min-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -456,5 +456,8 @@
 }
 .table{
     font-size: 10px;
+}
+.svgdiv {
+    min-width: 290px;
 }
 }
