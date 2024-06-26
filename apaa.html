@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0
+                                   min-width=0.5
+                                   max-width=0.5">
+    <title>大气压力与高度测量-Atmospheric Pressure and Altimetry</title>
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <link rel="icon" href="jewdoor.svg" sizes="16x16">
+</head>
+
+<body style="overflow-x: hidden !important;">
+    <script src="all.js"></script>
+    <div class="upbox">
+    </div>
+    <div class="mainhead">
+        <img src="jewdoor.svg" class="headpic">
+        <h1 class="headtext">
+            猪蛋飞行</br>
+            jewdoor flight
+        </h1>
+    </div>
+    <div class="body">
+        <div class="left">
+            <div style="display: block;
+                        margin-top: 70px;">
+                <button class="daohang hover">
+                    <a href="markmap.html" class="daohangbutton hover">返回思维导图</a>
+                </button>
+            </div>
+            <div style="display: block;
+                        margin-top: 0px;">
+                <button class="daohangbelow hover">
+                    <a href="index.html" class="daohangbutton hover">返回主页</a>
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="texthead">
+                Atmospheric Pressure and Altimetry</br>
+                大气压力与高度测量
+            </h1>
+            <div class="p1">
+                <p class="text h1text">
+                    <span data-start="0" data-end="1">Atmospheric pressure</span>
+                    <span data-start="1" data-end="1.5">is one of the most</span>
+                    <span data-start="1.5" data-end="2.5">basic variables</span>
+                    <span data-start="2.5" data-end="3.6">used to describe</span>
+                    <span data-start="3.6" data-end="4.1">the state of the</span>
+                    <span data-start="4.1" data-end="4.6">atmosphere</span>
+                    <span data-start="5.1" data-end="6.3">and is commonly reported</span>
+                    <span data-start="6.3" data-end="7.5">in weather observations</span>.
+                    <span data-start="9.3" data-end="10.2">Unlike temperature</span>
+                    <span data-start="10.2" data-end="11.4">and relative humidity</span>,
+                    <span data-start="11.9" data-end="13.3">changes in atmospheric pressure</span>
+                    <span data-start="13.7" data-end="14.6">are not as readily</span> 
+                    <span data-start="14.6" data-end="15.6">sensed by people</span>. 
+                    <span data-start="16.0" data-end="16.8">However</span>, 
+                    <span data-start="17.0" data-end="18.2">variations of pressure</span> 
+                    <span data-start="18.2" data-end="19">across the Earth</span> 
+                    <span data-start="19" data-end="19.7">are associated</span> 
+                    <span data-start="19.7" data-end="21.2">with pressure centers</span> 
+                    (<span data-start="21.3" data-end="22.4">either high-pressure centers</span> 
+                    <span data-start="22.4" data-end="23.7">or low-pressure centers</span>)
+                    that cause the wind to blow and can bring important weather changes. Density, which is directly
+                    related to pressure, is a property of the atmosphere, which can be used by pilots to help determine
+                    how their aircraft will perform at various altitudes.
+                </p>
+            </div>
+            <audio id="audio1" controls>
+                <source src="apaa1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p class="text h1text">
+                大气压力时描述大气状态的最基本参数，它通常出现在天气报告中。不同于温度和相对湿度，大气压力的变化不像前两者
+                一样容易被人感知。然而，全球气压变化与压力中心（高压中心或低压中心）的变化紧密相关，这些变化会产生风，并引发明显的天气变化。密度与
+                压力直接相关，同样也是大气的基本性质，可以帮助飞行员确定在不同高度下飞机的性能。
+            </p>
+            <div class="p2">
+                <p class="text h1text">
+                    <span data-start="0" data-end="10">This</span> chapter discusses atmospheric pressure, how it is
+                    measured, and how it varies across the
+                    Earth. This chapter also covers the altimeter, which is a pressure sensor used by pilots to
+                    determine altitude. Finally, density will be discussed, along with its relationship to density
+                    altitude.
+                </p>
+            </div>
+            <audio id="audio2" controls>
+                <source src="apaa2.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <script src="all.js"></script>
+
+
+
+            <p class="text h1text">
+                此章节讲述大气压力相关知识：如何测量大气压力，全球大气压力的变化。此章节也涵盖了高度表，高度表是飞行员用于判断高度
+                的一种压力传感器。最后讨论密度，以及密度和密度高度的关系。
+            </p>
+            <h2 class="h2">
+                Atmospheric Pressure</br>
+                大气压力
+            </h2>
+            <p class="text h2text">
+                The atoms and molecules that make up the various layers in the atmosphere are always
+                moving in random directions. Despite their tiny size, when they strike a surface, they exert pressure.
+                Each molecule is too small to feel and only exerts a tiny bit of pressure. However, when adding up all
+                the pressures from the large number of molecules that strike a surface each moment, the total pressure
+                is considerable. This is air pressure. As the density of the air increases, the number of strikes per
+                unit of time and area also increases.
+                Since molecules move in all directions, air pressure is exerted in all directions.
+            </p>
+            <p class="text h2text">
+                大气中组成不同气层的原子和分子们持续不断地做朝向随机方向的运动。尽管它们尺度很小，但当它们撞击到物体表面时，
+                仍会对物体表面施加压力。每一个分子都很小，而且只施加很小的一点压力，然而，如果将每时每刻撞击表面的大量分子
+                的压力加在一起，所得出的总压力的大小是不容忽视的。这便是气压。当空气密度增大时，单位时间和面积下撞击的次数
+                增加。由于分子朝着各个方向运动，大气压力也是朝着各个方向施加的。
+            </p>
+            <p class="text h2text">
+                Atmospheric pressure is the force per unit area exerted by the weight of the atmosphere.
+                Since air is not solid, it cannot be weighed with conventional scales. Yet, three centuries
+                ago, Evangelista Torricelli proved he could weigh the atmosphere by balancing it against a
+                column of mercury (see chapter: Air pressure). He actually measured pressure, converting it directly to
+                weight.
+            </p>
+            <p class="text h2text">
+                大气压力是大气的重量施加在单位面积上的力。由于空气不是固体，所以不能用常规单位衡量空气。但在三个世纪前，
+                埃万杰利斯塔·托里拆利发现可以通过水银柱与气压平衡的方式来测量大气重量（详见章节：空气压力）。他实际测量出的是大气压力，然后将其转化为重量。
+            </p>
+            <div class="svgdiv">
+                <img src="avb.svg" class="unselectable" draggable="false" oncontextmenu="return false;">
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图1-1
+            </p>
+            <h2 class="h2">
+                Barometer</br>
+                气压计
+            </h2>
+            <p class="text h2text">
+                The instrument Torricelli designed to measure pressure was called a barometer. The aneroid barometer is
+                the type most commonly used by meteorologists and the aviation community.
+            </p>
+            <p class="text h2text">
+                托里拆利所设计的这个测压仪器叫做气压计。其中，膜盒式气压计在气象学和航空领域中被广泛运用。
+            </p>
+            <p class="text h2text">
+                Essential features of an aneroid barometer (see Figure 1-2) are a flexible metal cell and the
+                registering
+                mechanism. Air is taken out of the cell to create a partial vacuum. The cell contracts or expands as
+                pressure
+                changes. One end of the cell is fixed, while the other end moves the registering mechanism. The coupling
+                mechanism magnifies the movement of the cell driving an indicator hand along a scale graduated in
+                pressure units.
+            </p>
+            <p class="text h2text">
+                膜盒气压计的主要部件（如图1-2）是弹性金属膜盒以及指示部件。金属盒中的空气被抽出，形成部分真空。当气压变化时，
+                膜盒会随之收缩或扩张。膜盒的一端被固定，另一端链接着指示部件。传动机构负责放大膜盒的运动，使指针沿着指示压力单位的刻度移动。
+            </p>
+            <div class="svgdiv">
+                <img src="abe.svg" class="unselectable" draggable="false" oncontextmenu="return false;">
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图1-2
+            </p>
+            <h2 class="h2">
+                Atmospheric Pressure Units</br>
+                大气压力单位
+            </h2>
+            <p class="text h2text">
+                Atmospheric pressure is expressed in many ways throughout the world (see Table 1-1). Meteorologists
+                worldwide have long measured atmospheric pressure in millibars (mb or mbar), which denote pressure as
+                a force per square centimeter. However, after the introduction of the International System of Units (SI)
+                in 1960, the hectopascal (hPa) was adopted by most countries and is used in the METAR/SPECI code first
+                developed in 1968. Many meteorologists prefer to use the term they learned during their education and
+                work experience. Therefore, some continue to use the term “millibars,” while others use “hectopascal”
+                (which are equivalent). The unit inch of mercury (inHg or Hg) is still used in the United States for
+                altimetry.
+            </p>
+            <p class="text h2text">
+                在世界范围内，大气压力有多种表达方式（如表格1-1）.全球的气象学家长期以来使用毫巴（mb或mbar）来测量大气压力。
+                毫巴是将大气压力定义为施加在每平方厘米上的力。然而，在1960年国际单位制（SI）设立之后，百帕斯卡（hPa）成为了多数国家使用的单位，
+                并且在1968年，机场例行/特殊天气报告出现时就被其使用。许多气象学家更倾向于使用他们过去学习和工作中常用的单位。因此，一部分人
+                继续使用“毫巴”，而另一部分人则使用“百帕斯卡”（这两个单位相等）。而英寸汞柱（inHg或Hg）这个单位则在美国的高度测量中沿用了下来。
+            </p>
+            <table border="3" class="table tablemp">
+                <thead bgcolor="lightgrey">
+                    <th>
+                        Units of Pressure</br>
+                        压力单位
+                    </th>
+                    <th>
+                        Standard Atmosphere</br>
+                        标准大气</br>
+                    </th>
+                    <th>
+                        Common Use</br>
+                        通常使用范围
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tdleft">
+                            Hectopascals (hPa)</br>
+                            百帕斯卡 (hPa)
+                        </td>
+                        <td class="tdleft">
+                            1013.2 hPa
+                        </td>
+                        <td class="tdleft">
+                            Aviation worldwide</br>
+                            国际民航
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleft">
+                            Millibars (mb or mbar)</br>
+                            毫巴 (mb或mbar)
+                        </td>
+                        <td class="tdleft">
+                            1013.2 mb
+                        </td>
+                        <td class="tdleft">
+                            U.S. Weather Charts</br>
+                            美国天气图
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleft">
+                            Inches of mercury (inHg or Hg)</br>
+                            英寸汞柱 (inHg或Hg)
+                        </td>
+                        <td class="tdleft">
+                            29.92 inHg
+                        </td>
+                        <td class="tdleft">
+                            U.S. Aviation</br>
+                            美国民用航空
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdleft">
+                            Pounds per square inch (psi)</br>
+                            磅每平方英寸 (psi)
+                        </td>
+                        <td class="tdleft">
+                            14.7 psi
+                        </td>
+                        <td class="tdleft">
+                            Aviation Engineering</br>
+                            民航工程
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" , bgcolor="lightgrey" style="text-align: left;
+                                   padding: 10px;">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                表格2-1
+            </p>
+            <h2 class="h2">
+                Station Pressure</br>
+                场面气压
+            </h2>
+            <P class="text h3text">
+                The pressure measured at an airport is called station pressure, or the actual pressure at field
+                elevation.
+                Pressure is lower at higher altitudes. Therefore, airports with higher field elevations usually have
+                lower
+                pressure than airports with lower field elevations. For instance, station pressure at Xinjiang is less
+                than at
+                Jinan (see Figure 2-1).
+            </P>
+            <P class="text h3text">
+                机场测量出的气压叫做场面气压，或者叫在机场标高处测得的实际气压。高度增高，气压减小，因此，机场标高高的机场通常比标高低的机场气压低。
+                例如，新疆所测得的场压比济南小。（如图2-1）
+            </P>
+            <div class="svgdiv">
+                <img src="pdida.svg" class="unselectable" draggable="false" oncontextmenu="return false;" style="width: 100%;
+                       height: 100%;
+                       margin: 0;">
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图2-1
+            </p>
+            <h2 class="h2">
+                Pressure Variation</br>
+                气压变化
+            </h2>
+            <P class="text h2text">
+                Atmospheric pressure varies with altitude and the temperature of the air, as well as with other minor
+                influences, such as water vapor.
+            </P>
+            <P class="text h2text">
+                大气压力随高度和气温变化，以及其他元素例如水汽的微量影响。
+            </P>
+            <h3 class="h3">
+                Pressure Changes with Altitude</br>
+                气压随高度的变化
+            </h3>
+            <P class="text h3text">
+                As a person moves upward through the atmosphere, the weight of the air above the person decreases. If a
+                person carries a barometer, then they can measure a decrease in pressure as the weight of the air above
+                them
+                decreases. Figure 2-1 shows the pressure decrease with height in the standard atmosphere.
+            </P>
+            <p class="text h3text">
+                当一个人在大气中向上运动时，此人上方的空气的重量减小。如果这个人还带着气压计，便可测量出气压随着上方空气重量的减小而减小。
+                如图2-1，在标准大气中，气压随高度升高而减小。
+            </p>
+            <p class="text h3text">
+                The standard altitudes in Figure 2-1 are based on standard temperatures. In the real atmosphere,
+                temperatures are seldom standard, so temperature’s effects on pressure will be explored in the following
+                section.
+            </p>
+            <p class="text h3text">
+                图2-1中的标准高度是基于标准温度，在实际的大气中，温度通常是非标准的，温度对气压的影响将在下面的内容中讲到。
+            </p>
+            <div class="svgdiv svgborder">
+                <svg width="100%" height="100%" viewBox="0,10,110,170">
+                    <defs>
+                        <g id="line">
+                            <path d="M 0 0 h 60" stroke="black" fill="none" stroke-width="0.5px"></path>
+                        </g>
+                    </defs>
+                    <use x="25" y="20" xlink:href="#line"></use>
+                    <text x="10" y="21" font-size="4px">100hPa</text>
+                    <text x="86" y="21" font-size="4px">53,000ft</text>
+                    <text x="87" y="24" font-size="3px">16,200m</text>
+                    <use x="25" y="60" xlink:href="#line"></use>
+                    <text x="10" y="61" font-size="4px">200hPa</text>
+                    <text x="86" y="61" font-size="4px">39,000ft</text>
+                    <text x="87" y="64" font-size="3px">11,800m</text>
+                    <use x="25" y="85" xlink:href="#line"></use>
+                    <text x="10" y="86" font-size="4px">300hPa</text>
+                    <text x="86" y="86" font-size="4px">30,000ft</text>
+                    <text x="88" y="89" font-size="3px">9,200m</text>
+                    <use x="25" y="105" xlink:href="#line"></use>
+                    <text x="10" y="106" font-size="4px">400hPa</text>
+                    <text x="86" y="106" font-size="4px">24,000ft</text>
+                    <text x="88" y="109" font-size="3px">7,200m</text>
+                    <use x="25" y="120" xlink:href="#line"></use>
+                    <text x="10" y="121" font-size="4px">500hPa</text>
+                    <text x="86" y="121" font-size="4px">18,000ft</text>
+                    <text x="88" y="124" font-size="3px">5,600m</text>
+                    <use x="25" y="133" xlink:href="#line"></use>
+                    <text x="10" y="134" font-size="4px">600hPa</text>
+                    <text x="86" y="134" font-size="4px">14,000ft</text>
+                    <text x="88" y="137" font-size="3px">4,200m</text>
+                    <use x="25" y="142" xlink:href="#line"></use>
+                    <text x="10" y="143" font-size="4px">700hPa</text>
+                    <text x="86" y="143" font-size="4px">10,000ft</text>
+                    <text x="88" y="146" font-size="3px">3,000m</text>
+                    <use x="25" y="162" xlink:href="#line"></use>
+                    <text x="8" y="163" font-size="4px">1000hPa</text>
+                    <text x="86" y="163" font-size="4px">300ft</text>
+                </svg>
+            </div>
+            <p class="pictext">图2-1</p>
+            <h3 class="h3">
+                Temperature’s Effects on Pressure</br>
+                温度对气压的影响
+            </h3>
+            <p class="text h3text">
+                Like most substances, air expands as it becomes warmer and contracts as it cools. Figure 2-2 shows three
+                columns of air: one colder than standard, one with standard temperature, and one warmer than standard.
+                Pressure is equal at the bottom and top of each column. Vertical expansion of the warm column has made
+                it taller than the column at standard temperature. Contraction of the cold column has made it shorter
+                than
+                the standard column. Since the total pressure decrease is the same in each column, the rate of decrease
+                of
+                pressure with height in warm air is less than standard, while the rate of decrease in pressure with
+                height in
+                cold air is greater than standard.
+            </p>
+            <p class="text h3text">
+                如同大多数物质，空气在温度升高时膨胀，在冷却时收缩。如图2-2所示的三团空气：一个温度比标准温度低，一个
+                温度是标准温度，最后一个温度比标准温度高。每一团空气的顶部和底部的气压与其他气团相等。温度较高的气团垂直扩张的程度比标准温度气团
+                高。较冷气团的收缩使其比标准气团矮。由于每团空气的气压总减小量相等，在温暖空气中气压随高度的递减率小于标准空气，而在寒冷空气中
+                气压随高度的递减率大于标准空气。
+            </p>
+            <div class="svgdiv svgborder">
+                <svg width="100%" height="100%" viewBox="0,50,545,450">
+                    <defs>
+                        <g id="cr">
+                            <rect x="2px" y="30px" width="100px" height="100px" fill="rgb(135,206,250,0.3)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></rect>
+                            <path d="M2 30 l 40 -25 h 100 l -40 25" fill="rgb(135,206,250,0.3)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M102 130 v -100 l 40 -25 v 100 l -40 25" fill="rgb(95,158,160,0.3)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M42 5 v 100 h 100 M 42 105 l -40 25" stroke-dasharray="5" stroke="rgb(0,0,0,0.3)"
+                                stroke-width="3px" fill="none"></path>
+                        </g>
+                        <g id="nr">
+                            <rect x="2px" y="30px" width="100px" height="150px" fill="rgb(211,211,211,0.6)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></rect>
+                            <path d="M2 30 l 40 -25 h 100 l -40 25" fill="rgb(211,211,211,0.6)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M102 180 v -150 l 40 -25 v 150 l -40 25" fill="rgb(211,211,211,0.9)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M42 5 v 150 h 100 M 42 155 l -40 25" stroke-dasharray="5" stroke="rgb(0,0,0,0.3)"
+                                stroke-width="3px" fill="none"></path>
+                        </g>
+                        <g id="hr">
+                            <rect x="2px" y="30px" width="100px" height="200px" fill="rgb(255,102,102,0.6)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></rect>
+                            <path d="M2 30 l 40 -25 h 100 l -40 25" fill="rgb(255,102,102,0.6)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M102 230 v -200 l 40 -25 v 200 l -40 25" fill="rgb(255,102,102,0.9)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M42 5 v 200 h 100 M 42 205 l -40 25" stroke-dasharray="5"
+                                stroke="rgb(255,102,102,0.3)" stroke-width="3px" fill="none"></path>
+                        </g>
+                        <g id="ap">
+                            <circle cx="55px" cy="20px" r="5px" fill="rgb(255,255,255,0.5)" stroke="grey"
+                                stroke-width="1px"></circle>
+                        </g>
+                        <g id="apt">
+                            <circle cx="55px" cy="20px" r="5px" fill="rgb(211,211,211,0.8)" stroke="grey"
+                                stroke-width="1px"></circle>
+                        </g>
+                        <g id="p">
+                            <path d="M0 0 h 3 l -3 -5 l -3 5 h 3" stroke="black" fill="black"></path>
+                        </g>
+                    </defs>
+                    <use x="20" y="200" xlink:href="#cr"></use>
+                    <use x="20" y="200" xlink:href="#ap"></use>
+                    <use x="35" y="195" xlink:href="#ap"></use>
+                    <use x="0" y="203" xlink:href="#ap"></use>
+                    <use x="-5" y="223" xlink:href="#ap"></use>
+                    <use x="-15" y="233" xlink:href="#ap"></use>
+                    <use x="-20" y="253" xlink:href="#ap"></use>
+                    <use x="-13" y="273" xlink:href="#ap"></use>
+                    <use x="-6" y="293" xlink:href="#ap"></use>
+                    <use x="15" y="270" xlink:href="#ap"></use>
+                    <use x="25" y="223" xlink:href="#ap"></use>
+                    <use x="16" y="243" xlink:href="#ap"></use>
+                    <use x="30" y="253" xlink:href="#ap"></use>
+                    <use x="40" y="263" xlink:href="#ap"></use>
+                    <use x="43" y="237" xlink:href="#ap"></use>
+                    <use x="54" y="266" xlink:href="#ap"></use>
+                    <use x="45" y="286" xlink:href="#ap"></use>
+                    <use x="75" y="286" xlink:href="#apt"></use>
+                    <use x="85" y="216" xlink:href="#apt"></use>
+                    <use x="80" y="236" xlink:href="#apt"></use>
+                    <use x="87" y="256" xlink:href="#apt"></use>
+
+                    <use x="200" y="150" xlink:href="#nr"></use>
+                    <use x="200" y="200" xlink:href="#ap"></use>
+                    <use x="215" y="175" xlink:href="#ap"></use>
+                    <use x="180" y="203" xlink:href="#ap"></use>
+                    <use x="175" y="223" xlink:href="#ap"></use>
+                    <use x="165" y="253" xlink:href="#ap"></use>
+                    <use x="160" y="173" xlink:href="#ap"></use>
+                    <use x="175" y="273" xlink:href="#ap"></use>
+                    <use x="162" y="293" xlink:href="#ap"></use>
+                    <use x="220" y="201" xlink:href="#ap"></use>
+                    <use x="225" y="150" xlink:href="#ap"></use>
+                    <use x="183" y="148" xlink:href="#ap"></use>
+                    <use x="220" y="253" xlink:href="#ap"></use>
+                    <use x="230" y="273" xlink:href="#ap"></use>
+                    <use x="211" y="285" xlink:href="#ap"></use>
+                    <use x="260" y="266" xlink:href="#apt"></use>
+                    <use x="270" y="246" xlink:href="#apt"></use>
+                    <use x="275" y="226" xlink:href="#apt"></use>
+                    <use x="265" y="216" xlink:href="#apt"></use>
+                    <use x="255" y="186" xlink:href="#apt"></use>
+                    <use x="267" y="166" xlink:href="#apt"></use>
+
+                    <use x="380" y="100" xlink:href="#hr"></use>
+                    <use x="380" y="200" xlink:href="#ap"></use>
+                    <use x="395" y="175" xlink:href="#ap"></use>
+                    <use x="360" y="223" xlink:href="#ap"></use>
+                    <use x="355" y="263" xlink:href="#ap"></use>
+                    <use x="345" y="243" xlink:href="#ap"></use>
+                    <use x="340" y="173" xlink:href="#ap"></use>
+                    <use x="357" y="293" xlink:href="#ap"></use>
+                    <use x="382" y="296" xlink:href="#ap"></use>
+                    <use x="400" y="251" xlink:href="#ap"></use>
+                    <use x="395" y="130" xlink:href="#ap"></use>
+                    <use x="363" y="148" xlink:href="#ap"></use>
+                    <use x="420" y="233" xlink:href="#ap"></use>
+                    <use x="410" y="273" xlink:href="#ap"></use>
+                    <use x="391" y="100" xlink:href="#ap"></use>
+                    <use x="440" y="266" xlink:href="#apt"></use>
+                    <use x="450" y="246" xlink:href="#apt"></use>
+                    <use x="455" y="206" xlink:href="#apt"></use>
+                    <use x="445" y="186" xlink:href="#apt"></use>
+                    <use x="435" y="166" xlink:href="#apt"></use>
+                    <use x="447" y="136" xlink:href="#apt"></use>
+
+                    <text x="62" y="170" fill="rgb(135,206,250)">Cold Air</text>
+                    <text x="67" y="190" fill="rgb(135,206,250)">冷空气</text>
+
+                    <text x="192" y="120">Standard Atmosphere</text>
+                    <text x="237" y="140">标准大气</text>
+
+                    <text x="417" y="70" fill="rgb(255,102,102,0.9)">Warm Air</text>
+                    <text x="427" y="90" fill="rgb(255,102,102,0.9)">暖空气</text>
+
+                    <path d="M90 350 v 20 h 180 v -20 v 20 h 180 v -20 v 20 h -180 v 20" stroke="black" fill="none"
+                        stroke-width="2px"></path>
+                    <use x="90" y="350" xlink:href="#p"></use>
+                    <use x="270" y="350" xlink:href="#p"></use>
+                    <use x="450" y="350" xlink:href="#p"></use>
+                    <text x="180" y="410">Equal Mass and Pressure</text>
+                    <text x="210" y="430">质量和气压相等</text>
+
+                    <use x="130" y="440" xlink:href="#ap"></use>
+                    <text x="195" y="465">Air Molecule 空气分子</text>
+                </svg>
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图2-2
+            </p>
+            <h2 class="h2">
+                Sea Level Pressure</br>
+                海平面气压
+            </h2>
+            <P class="text h2text">
+                Since pressure varies greatly with altitude, people cannot readily compare station pressures between
+                stations
+                at different altitudes. To make them comparable, they are adjusted to some common level. Mean sea level
+                (MSL) is the most useful common reference. In Figure 3-1, pressure measured at a station at a 5,000-ft
+                elevation is 25 inHg; pressure increases about 1 inHg for each 1,000 ft, or a total of 5 inHg. Sea level
+                pressure is approximately 25 + 5, or 30 inHg.
+            </P>
+            <p class="text h2text">
+                由于气压随高度改变而发生显著变化，我们无法直接将两个处于不同高度的机场的场面气压进行比较。为了使他们可以被比较，
+                转而使用些许相同的基准面。标准海平面(MSL)是最可靠的通用基准。如图3-1，在5000英尺海拔高度上的机场上所测得的气压为25英寸汞柱；气压每1000英尺大约升高1英寸汞柱，
+                总共5英寸汞柱。海平面气压大约为25+5，30英寸汞柱。
+            </p>
+            <div class="svgdiv svgborder">
+                <img src="cslp.svg" class="unselectable" draggable="false" oncontextmenu="return false;" style="width: 100%;
+                       height: 100%;
+                       margin: 0;">
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图3-1
+            </p>
+            <p class="text h2text">
+                Sea level pressure is typically displayed on surface weather charts. Pressure continually changes across
+                the
+                Earth, so a sequence of surface charts must be viewed to follow these changing pressures.
+            </p>
+            <p class="text h2text">
+                在地面天气图中一般使用海平面气压，地球上的气压持续不停的变化，因此必须根据这些气压的变化而发布一系列地面天气图。
+            </p>
+            <h2 class="h2">
+                Density</br>
+                密度
+            </h2>
+            <P class="text h2text">
+                See chapter "Density".
+            </P>
+            <p class="text h2text">
+                见章节“密度”。
+            </p>
+            <h2 class="h2">
+                Altimetry</br>
+                高度测量
+            </h2>
+            <P class="text h2text">
+                The altimeter is essentially an aneroid barometer. The difference is the scale. The altimeter is
+                graduated to
+                read increments of altitude rather than units of pressure. The standard for graduating the altimeter is
+                the
+                standard atmosphere.
+            </P>
+            <p class="text h2text">
+                高度表本质上是一种膜盒式气压计。它与常规膜盒气压计的区别在于刻度。高度表的刻度是以高度的增量来显示，而不是压力单位。高度表的刻度标准是基于标准大气压。
+            </p>
+            <h3 class="h3">
+                Altitude</br>
+                高度
+            </h3>
+            <P class="text h3text">
+                Altitude seems like a simple term; it means the vertical elevation of an object above the surface of the
+                Earth.
+                However, in aviation, it can have many meanings.
+            </P>
+            <p class="text h3text">
+                高度看似是一个简单的术语，意味着物体高于地表的垂直距离。然而，在航空领域，它可以有多种含义。
+            </p>
+            <p class="text h3text">
+                <strong>
+                    1.True Altitude.</br>
+                    1.绝对高度.
+                </strong>
+            </p>
+            <p class="text h3text">
+                Since existing conditions in a real atmosphere are seldom standard, altitude indications on the
+                altimeter are
+                seldom actual or true altitudes. True altitude is the actual vertical distance above MSL. If an
+                altimeter does
+                not indicate true altitude, what does it indicate?
+            </p>
+            <p class="text h3text">
+                由于真实的大气很少符合标准条件，大气表上的高度指示通常不是实际的或真正的高度。绝对高度是指距平均海平面的实际垂直距离。如果高度表不能显示绝对高度，那么它显示的是什么？
+            </p>
+            <p class="text h3text">
+                <strong>
+                    2.Indicated Altitude.</br>
+                    2.指示高度.
+                </strong>
+            </p>
+            <P class="text h3text">
+                Figure 2-2 shows the effect of mean temperature on the thickness of three columns of air. Pressures are
+                equal at the bottoms and tops of the three layers. Since an altimeter is essentially an aneroid
+                barometer,
+                altitude indicated by the altimeter at the top of each column would be the same. To see this effect more
+                clearly, see Figure 3-2. In the warm air column, a pilot would fly at an altitude that is higher than
+                the
+                indicated altitude. In the cold air column, the pilot would fly at an altitude lower than the indicated
+                altitude.
+            </P>
+            <p class="text h3text">
+                图 2-2 显示了平均温度对三个空气柱厚度的影响。三个空气柱的底部和顶部的压力相等。由于高度表本质上是一种膜盒气压计，因此高度表在每个柱顶显示的高度相同。要更清楚地看到这种影响，请参见图
+                3-2。在暖空气柱中，飞行员会飞得比指示高度更高。在冷空气柱中，飞行员会飞得比指示高度更低。
+            </p>
+            <div class="svgdiv svgborder">
+                <svg width="100%" height="100%" viewBox="0,-50,545,500">
+                    <defs>
+                        <g id="cr">
+                            <rect x="2px" y="30px" width="100px" height="100px" fill="rgb(135,206,250,0.3)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></rect>
+                            <path d="M2 30 l 40 -25 h 100 l -40 25" fill="rgb(135,206,250,0.3)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M102 130 v -100 l 40 -25 v 100 l -40 25" fill="rgb(95,158,160,0.3)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M42 5 v 100 h 100 M 42 105 l -40 25" stroke-dasharray="5" stroke="rgb(0,0,0,0.3)"
+                                stroke-width="3px" fill="none"></path>
+                        </g>
+                        <g id="nr">
+                            <rect x="2px" y="30px" width="100px" height="150px" fill="rgb(211,211,211,0.6)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></rect>
+                            <path d="M2 30 l 40 -25 h 100 l -40 25" fill="rgb(211,211,211,0.6)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M102 180 v -150 l 40 -25 v 150 l -40 25" fill="rgb(211,211,211,0.9)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M42 5 v 150 h 100 M 42 155 l -40 25" stroke-dasharray="5" stroke="rgb(0,0,0,0.3)"
+                                stroke-width="3px" fill="none"></path>
+                        </g>
+                        <g id="hr">
+                            <rect x="2px" y="30px" width="100px" height="200px" fill="rgb(255,102,102,0.6)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></rect>
+                            <path d="M2 30 l 40 -25 h 100 l -40 25" fill="rgb(255,102,102,0.6)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M102 230 v -200 l 40 -25 v 200 l -40 25" fill="rgb(255,102,102,0.9)"
+                                stroke="rgb(108, 122, 137, 0.6)" stroke-width="3px"></path>
+                            <path d="M42 5 v 200 h 100 M 42 205 l -40 25" stroke-dasharray="5"
+                                stroke="rgb(255,102,102,0.3)" stroke-width="3px" fill="none"></path>
+                        </g>
+                        <g id="p">
+                            <path d="M0 0 h 3 l -3 -5 l -3 5 h 3" stroke="black" fill="black"></path>
+                        </g>
+                        <g id="pd">
+                            <path d="M0 0 h 3 l -3 5 l -3 -5 h 3" stroke="black" fill="black"></path>
+                        </g>
+                    </defs>
+                    <use x="20" y="200" xlink:href="#cr"></use>
+
+                    <use x="200" y="150" xlink:href="#nr"></use>
+
+                    <use x="380" y="100" xlink:href="#hr"></use>
+
+                    <text x="42" y="270" fill="rgb(135,206,250)">Cold Air</text>
+                    <text x="47" y="290" fill="rgb(135,206,250)">冷空气</text>
+
+                    <text x="218" y="230">Standard</text>
+                    <text x="206" y="250">Atmosphere</text>
+                    <text x="220" y="270">标准大气</text>
+
+                    <text x="398" y="220" fill="rgb(255,102,102,0.9)">Warm Air</text>
+                    <text x="410" y="240" fill="rgb(255,102,102,0.9)">暖空气</text>
+
+                    <path d="M90 350 v 20 h 180 v -20 v 20 h 180 v -20 v 20 h -180 v 20" stroke="black" fill="none"
+                        stroke-width="2px"></path>
+                    <use x="90" y="350" xlink:href="#p"></use>
+                    <use x="270" y="350" xlink:href="#p"></use>
+                    <use x="450" y="350" xlink:href="#p"></use>
+                    <text x="180" y="410">Equal Mass and Pressure</text>
+                    <text x="210" y="430">质量和气压相等</text>
+
+                    <path d="M90 215 v -30" stroke="black" fill="none" stroke-width="2px"></path>
+                    <path d="M270 165 v -30" stroke="black" fill="none" stroke-width="2px"></path>
+                    <path d="M450 115 v -30" stroke="black" fill="none" stroke-width="2px"></path>
+                    <use x="90" y="215" xlink:href="#pd"></use>
+                    <use x="270" y="165" xlink:href="#pd"></use>
+                    <use x="450" y="115" xlink:href="#pd"></use>
+
+                    <text x="20" y="75" fill="rgb(135,206,250)">Indicated Altitude</text>
+                    <text x="55" y="95" fill="rgb(135,206,250)">指示高度</text>
+                    <text x="55" y="115" fill="rgb(135,206,250)">10,000ft</text>
+                    <text x="40" y="145" fill="rgb(135,206,250)">True Altitude</text>
+                    <text x="55" y="165" fill="rgb(135,206,250)">绝对高度</text>
+                    <text x="60" y="185" fill="rgb(135,206,250)">9,000ft</text>
+
+                    <text x="200" y="25">Indicated Altitude</text>
+                    <text x="235" y="45">指示高度</text>
+                    <text x="235" y="65">10,000ft</text>
+                    <text x="220" y="95">True Altitude</text>
+                    <text x="235" y="115">绝对高度</text>
+                    <text x="235" y="135">10,000ft</text>
+
+                    <text x="380" y="-25" fill="rgb(255,102,102,0.9)">Indicated Altitude</text>
+                    <text x="415" y="-5" fill="rgb(255,102,102,0.9)">指示高度</text>
+                    <text x="415" y="15" fill="rgb(255,102,102,0.9)">10,000ft</text>
+                    <text x="400" y="45" fill="rgb(255,102,102,0.9)">True Altitude</text>
+                    <text x="415" y="65" fill="rgb(255,102,102,0.9)">绝对高度</text>
+                    <text x="415" y="85" fill="rgb(255,102,102,0.9)">11,000ft</text>
+                </svg>
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图2-2
+            </p>
+            <P class="text h3text">
+                Height indicated on the altimeter also changes with changes in surface pressure. A movable scale on the
+                altimeter permits the pilot to adjust for surface pressure, but the pilot has no means of adjusting the
+                altimeter
+                for mean temperature of the column of air below. Indicated altitude is the altitude above MSL indicated
+                on
+                the altimeter when set at the local altimeter setting. But what is altimeter setting?
+            </P>
+            <p class="text h3text">
+                高度表上的高度还会随着地面压力的变化而变化。高度表上的可移动刻度使飞行员可以调整地面压力，但飞行员无法调整高度表以适应空气柱的平均温度。指示高度是当高度表调整为当地高度表拨正值时显示的高于平均海平面的高度。那么什么是高度表设置？
+            </p>
+            <p class="text h3text">
+                <strong>Altimeter Setting:</strong> Since the altitude scale is adjustable, a pilot can set the
+                altimeter setting to read true altitude at some specified
+                height. Takeoff and landing are the most critical phases of flight; therefore, airport elevation is the
+                most
+                desirable altitude for a true reading of the altimeter. The altimeter setting is the value to which the
+                scale of
+                the pressure altimeter is set so the altimeter indicates true altitude at field elevation.
+            </p>
+            <p class="text h3text">
+                <strong>高度表设置:</strong>
+                由于高度刻度是可调的，飞行员可以将高度表拨正值设置在某个指定高度从而获取绝对高度。起飞和着陆是飞行中最关键的阶段，因此机场标高是高度表读取绝对高度的最理想高度。因为高度表拨正值就是是压力高度表的刻度的拨正值值，所以高度表显示相对于机场标高的绝对高度。
+            </p>
+            <P class="text h3text">
+                To ensure the altimeter reading is compatible with altimeter readings of other aircraft in the vicinity,
+                a pilot
+                should ensure the altimeter setting is current. The pilot should adjust it frequently while in flight,
+                according
+                to the nearest surface weather reporting station. Figure 2-3 shows the trouble a pilot can encounter if
+                not
+                vigilant in adjusting the altimeter during flight. As the pilot flies from high pressure to low
+                pressure, the
+                plane is lower than the altimeter indicates.
+            </p>
+            <P class="text h3text">
+                为了确保高度表读数与附近其他飞机的高度表读数一致，飞行员应确保高度表设置的时效性。
+                在飞行过程中，飞行员应根据最近的地面天气报告站不停的调整高度表设置。如果飞行员在飞行中不注意调整高度表，可能会遇到问题，如图 2-3 所示。当飞行员从高压区飞向低压区时，飞机的实际高度低于高度表显示的高度。
+            </P>
+            <div class="svgdiv svgborder">
+                <img src="apd.svg" class="unselectable" draggable="false" oncontextmenu="return false;" style="width: 100%;
+                       height: 100%;
+                       margin: 0;">
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图2-3
+            </p>
+            <P class="text h3text">
+                Figure 2-4 shows that as a pilot flies from warm to cold air, the altimeter reads too high—the pilot is
+                lower
+                than the altimeter indicates. Over flat terrain, this lower-than-true reading is no great problem; other
+                aircraft
+                in the vicinity are also flying indicated rather than true altitude, and everyone’s altimeter readings
+                are
+                compatible. If flying in cold weather over mountainous areas, however, a pilot needs to take this
+                difference
+                between indicated and true altitude into account. The pilot needs to know that the true altitude assures
+                clearance of terrain, and compute a correction to indicated altitude.
+            </P>
+            <p class="text h3text">
+                图 2-4 显示了温度变化对高度表读数的影响。当飞行员从暖空气飞向冷空气时，高度表读数高——飞行员的实际高度低于高度表显示的高度。
+                在平坦地形上，这种低于绝对高度的读数没有太大问题；附近的其他飞机也在飞指示高度而非绝对高度，大家的高度表读数是一样的。然而，如果在寒冷天气下飞越山区，
+                飞行员需要考虑指示高度与绝对高度之间的差异。飞行员需要确保绝对高度可以越过地形，并计算指示高度的修正值。
+            </p>
+            <div class="svgdiv svgborder">
+                <img src="cwad.svg" class="unselectable" draggable="false" oncontextmenu="return false;" style="width: 100%;
+                       height: 100%;
+                       margin: 0;">
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图2-4
+            </p>
+            <p class="text h3text">
+                <strong>
+                    3.Corrected (Approximately True) Altitude.</br>
+                    3.修正（近似绝对）高度.
+                </strong>
+            </p>
+            <p class="text h3text">
+                If a pilot could always determine the mean temperature of a column of air between the aircraft and the
+                surface, flight computers would be designed to use this mean temperature in computing true altitude.
+                However, the only guide a pilot has to temperature below is free air temperature at the pilot’s
+                altitude.
+                Therefore, the flight computer uses outside air temperature (OAT) to correct indicated altitude to
+                approximately true altitude. The corrected (approximately true) altitude is indicated altitude corrected
+                for
+                the temperature of the air column below the aircraft, the correction being based on the estimated
+                deviation
+                of the existing temperature from standard atmosphere temperature. It is a close approximation to true
+                altitude and is labeled true altitude on flight computers. It is close enough to true altitude to be
+                used for
+                terrain clearance, provided the pilot has the altimeter set to the value reported from a nearby
+                reporting
+                station.
+            </p>
+            <p class="text h3text">
+                如果飞行员能够始终确定从飞机到地面的空气柱的平均温度，飞行计算机就可以使用这个平均温度来计算绝对高度。然而，飞行员唯一可以参考的空气温度是飞行员所在高度处的自由大气的温度。
+                因此，飞行计算机使用外界大气温度（OAT）来修正指示高度以近似绝对高度。修正后的（近似绝对）高度是基于现有温度与标准大气温度的偏差估算值，根据飞机下方空气柱温度对指示高度进行修正的高度，这是绝对高度
+                的近似值，在飞行计算机上标记为绝对高度。它足够接近绝对高度，可以用于地形避让，前提是飞行员将高度表设置为附近气象站所报告的拨正值。
+            </p>
+            <p class="text h3text">
+                <strong>
+                    4.Pressure Altitude.</br>
+                    4.气压高度.
+                </strong>
+            </p>
+            <p class="text h3text">
+                In the standard atmosphere, sea level pressure is 1013.25 hPa (29.92 inHg). Pressure decreases at a
+                fixed rate
+                upward through the standard atmosphere. Therefore, in the standard atmosphere, a given pressure exists
+                at
+                any specified altitude. Pressure altitude is the altitude (above MSL) shown by the altimeter when set to
+                1013.25 hPa (29.92 inHg) . In other words, it is the altitude associated with a specific pressure
+                measured by the static port
+                when the altimeter is set to 1013.25. Since pressure is the same everywhere regardless of the specific
+                pressure altitude, a constant-pressure surface defines a
+                constant-pressure altitude. When a pilot flies a
+                constant-pressure altitude, the pilot is flying a constant-pressure surface.
+            </p>
+            <p class="text h3text">
+                在标准大气压下，海平面压力为 1013.25 百帕（29.92 英寸汞柱）。在标准大气压中，气压以固定速率向上减小。因此，在标准大气压中，
+                任何指定高度都有特定的气压。气压高度是高度表设置为 1013.25 百帕（29.92 英寸汞柱）时显示的高度（基于平均海平面）。换句话说，它是当高度表设置为 1013.25
+                时通过静压孔测量的特定压力对应的高度。
+                由于气压无论在何处都是相同的，恒定压力面定义了恒定的压力高度。当飞行员飞行在恒定压力高度时，飞行员是在飞行一个恒定压力面。
+            </p>
+            <p class="text h3text">
+                As discussed earlier, constant-pressure surfaces have different heights across them. Therefore, when
+                flying
+                at a specific pressure altitude (i.e., constant-pressure surface) a pilot’s true altitude will change
+                with
+                distance. However, since pressure altitudes are flown at or above FL180 (in the United States), a pilot
+                will
+                almost always be above the highest terrain features.
+            </p>
+            <p class="text h3text">
+                如上所述，等压面的在不同位置的高度不同。因此，当飞行员在特定气压高度（即等压面）上飞行时，
+                飞行员的绝对高度会随距离而变化。然而，在气压高度处于或高于FL180（美国）的高度飞行，飞行员几乎总是高于地形特征的最高点。
+            </p>
+            <p class="text h3text">
+                <strong>
+                    5.Density Altitude.</br>
+                    5.密度高度.
+                </strong>
+            </p>
+            <p class="text h3text">
+                Density altitude is the pressure altitude corrected for temperature deviations from the standard
+                atmosphere.
+                Density altitude bears the same relation to pressure altitude as true altitude does to indicated
+                altitude.
+            </p>
+            <p class="text h3text">
+                密度高度是修正了偏离标准大气温度的温度后的气压高度。密度高度与气压高度的关系类似于绝对高度与指示高度的关系。
+            </p>
+            <p class="text h3text">
+                Density altitude is indirectly related to atmospheric density; as air density increases, the density
+                altitude
+                decreases, and conversely, as air density decreases, the density altitude increases. Airports with
+                higher field
+                elevations (e.g., Daocheng Yading Airport) have lower pressure, lower density, and, therefore, higher
+                density altitudes than
+                airports with lower field elevations (e.g., Jinan Yaoqiang International Airport).
+            </p>
+            <p class="text h3text">
+                密度高度与大气密度间接相关；随着空气密度增加，密度高度降低；反之，随着空气密度减少，
+                密度高度增加。机场标高较高（如稻城亚丁机场）的机场压力较低、密度较低，因此密度高度较高；而机场标高较低（如济南遥墙机场）的机场则相反。
+            </p>
+            <p class="text h3text">
+                Density altitude equals field elevation during standard atmospheric conditions, but conditions are
+                rarely
+                standard. Density altitude is higher (lower) than standard at airports that report lower (higher) than
+                standard
+                pressures and/or higher (lower)-than-standard temperatures. Temperature is the most
+                important factor, since temperature has the greatest effect on density horizontally in the atmosphere.
+                On hot
+                days, the air becomes less dense, causing high density altitudes. On cold days, the air is denser,
+                causing
+                lower density altitudes. Dewpoint (water vapor) is also a contributing factor, but its effects are
+                generally
+                negligible.
+            </p>
+            <p class="text h3text">
+                在标准大气条件下，密度高度等于机场标高，但气象条件很少是标准的。在报告中低于（高于）标准压力和/或高于（低于）标准温度的机场，
+                密度高度高于（低于）标准。温度是最重要的因素，因为温度对大气密度在水平方向的影响最大。在炎热的日子里，空气变得不那么稠密，导致密度高度高。
+                在寒冷的日子里，空气更稠密，导致密度高度低。露点（水汽）也是一个影响因素，但其影响通常可以忽略不计。
+            </p>
+            <p class="text h3text">
+                Density altitude is an index to aircraft performance. Higher density altitude decreases aircraft
+                performance.
+                Lower density altitude increases aircraft performance. High density altitude is a hazard, since it
+                reduces
+                aircraft performance in the following three ways:
+            </p>
+            <p class="text h3text">
+                密度高度是飞机性能的一个指数。高密度高度降低飞机性能。低密度高度飞机性能提高。高密度高度是一种危险天气情况，因为它通过以下三种方式降低飞机性能：
+            </p>
+            <p class="text h3text">
+                &nbsp;&nbsp;&nbsp;&nbsp;1. It reduces power because the engine takes in less air to support
+                combustion.</br>
+                &nbsp;&nbsp;&nbsp;&nbsp;1. 由于发动机吸入的维持燃烧的空气减少，功率下降。</br>
+                </br>
+                &nbsp;&nbsp;&nbsp;&nbsp;2. It reduces thrust because there is less air for the propeller to work with,
+                </br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or a jet has less mass of gases to force out of the
+                exhaust.</br>
+                &nbsp;&nbsp;&nbsp;&nbsp;2. 由于螺旋桨的工作所需的空气减少，拉力下降</br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;或喷气机喷出的气体质量减少。</br>
+                </br>
+                &nbsp;&nbsp;&nbsp;&nbsp;3. It reduces lift because the light air exerts less force on the airfoils.</br>
+                &nbsp;&nbsp;&nbsp;&nbsp;3. 因为稀薄的空气对翼面的作用力减少，升力减小。
+            </p>
+            <p class="text h3text">
+                The net results are that high density altitude lengthens a pilot’s takeoff and landing rolls and reduces
+                the
+                rate of climb. Before lift-off, the plane must attain a faster groundspeed, and, therefore, needs more
+                runway;
+                and the reduced power and thrust add a need for still more runway. The plane lands at a faster
+                groundspeed
+                and, therefore, needs more room to stop. At a prescribed indicated airspeed, it is flying at a faster
+                true
+                airspeed, and, therefore, covers more distance in a given time, which means climbing at a shallower
+                angle.
+                Adding to this are the problems of reduced power and rate of climb. Figure 8-15 shows the effect of
+                density
+                altitude on takeoff distance and rate of climb.
+            </p>
+            <p class="text h3text">
+                结果是，高密度高度延长了飞行员的起飞和着陆滑跑距离，并减少了爬升率。在离地前，飞机必须达到更快的地速，因此需要用更多的跑道；
+                减少的功率和推力也增加了对更长跑道的需求。飞机以更快的地速着陆，因此需要更长的距离来停止。以规定的指示空速飞行时，
+                它的实际空速更快，因此在给定时间内飞过更多的距离，这意味着以更小的角度爬升。再加上动力和爬升率降低更加加剧了这一问题。图3-1显示了密度高度对起飞距离和爬升率的影响。
+            </p>
+            <div class="svgdiv">
+                <img src="daaotoracr.svg" class="unselectable" draggable="false" oncontextmenu="return false;" style="width: 100%;
+                       height: 100%;
+                       margin: 0;">
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图3-1
+            </p>
+            <p class="text h3text">
+                High density altitude also can be a problem at cruising altitude. When air temperature is higher
+                than standard atmosphere, the higher density altitude lowers the service ceiling. For example, if
+                temperature
+                at a pressure altitude of 10,000 ft is 20 °C, density altitude is 12,700 ft. A pilot’s aircraft will
+                perform as
+                though it were at 12,700 ft indicated with a normal temperature of -8 °C.
+            </p>
+            <p class="text h3text">
+                在巡航高度上的高密度高度也可能产生问题。当空气温度高于标准大气温度时，较高的密度高度降低了实用升限。
+                例如，如果在压力高度为 10,000 英尺时温度为 20 °C，密度高度为 12,700 英尺。飞行员的飞机的表现就像是在正
+                常温度为 -8 °C 时在 12,700 英尺指示高度飞行。
+            </p>
+            <p class="text h3text">
+                To compute density altitude, a pilot can set the altimeter to 1,013.2 hPa (29.92 in), read the pressure
+                altitude 1,013.2 hPa
+                from the altimeter, obtain the OAT, and then use a flight computer to compute density altitude.
+            </p>
+            <p class="text h3text">
+                为了计算密度高度，飞行员可以将高度表设置为 1,013.2 百帕（29.92 英寸），读取高度表上的压力高度，获取外界空气温度（OAT），然后使用飞行计算机计算密度高度。
+            </p>
+        </div>
+
+
+
+
+
+        <div class="blankbox"></div>
+    </div>
+    </div>
+    <div class="lowerbox">
+
+    </div>
+    <div class="bottombox">
+
+    </div>
+</body>
+
+</html>
