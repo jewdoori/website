@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0
+                                   min-width=0.5
+                                   max-width=0.5">
+    <title>PAVE检查单-The PAVE Checklist</title>
+    <link rel="icon" href="jewdoor.svg" sizes="16x16">
+    <style>
+        /* 固定页面，使多出的内容自动形成滚动条 */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* 更改滚动条样式 (没搞清楚)*/
+        /* ::-webkit-scrollbar {
+            width: 20px;
+        } */
+
+        /* 使body占满整个页面 */
+        .body {
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            display: flex
+        }
+
+        /* 左侧栏设置 */
+        .left {
+            background-color: #34495e;
+            height: 100vh;
+            width: 5%;
+            overflow-y: hidden; 
+            position: relative;
+            /* 动画时间 */
+            transition: 0.5s;
+        }
+
+        /* 伪类选择器，左侧栏鼠标悬停变宽 */
+        .left:hover {
+            width: 15%;
+        }
+
+        /* 猪蛋icon的圆形边框 */
+        .pigicondiv {
+            width: 3vw;
+            height: 3vw;
+            border-radius: 50%;
+            background-color: white;
+            border: 3px solid #5d6d7e;
+            overflow: hidden;
+            margin-top: 1.5vw;
+            position: absolute;
+            margin-left: 0.8vw;
+        }
+
+        /* 标题左侧白色方块 */
+        .headerbox{
+            margin-left: 1vw;
+            height: 4vw;
+            width: 0.3vw;
+            background-color: white;
+            position: absolute;
+            margin-left: 5vw;
+            margin-top: 1.2vw;
+        }
+
+        .title {
+            font-size: clamp(20px,25px,30px);
+            color: white;
+            margin: auto;
+            margin-top: 1px;
+            display: none;
+        }
+
+        /* 侧边栏横线，保持80%，随侧边栏变长变短 */
+        .line {
+            margin: auto;
+            width: 80%;
+            height: 2px;
+            background-color: #5d6d7e;
+            margin-top: 10px;
+        }
+
+        /* 在鼠标悬停时让横线变长一点，不然看起来有点短 */
+        .left:hover .line {
+            width: 90%;
+        }
+
+
+
+        .middle {
+            background-color: #e8eaf6  ;
+            height: 100vh;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .right {
+            background-color: white;
+            height: 100vh;
+            width: 35%;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="left">
+                <div class="pigicondiv">
+                    <img src="jewdoor.svg">
+                </div>
+                <div class="headerdiv">
+                    <div class="blankbox"></div>
+                    <div class="headerbox"></div>
+                    <div class="titlediv">
+                        <div class="title">
+                            jewdoor flight
+                        </div>
+                        <div class="title">
+                            猪蛋飞行
+                        </div>
+                    </div>
+                    <div class="blankbox"></div>
+                </div>
+                <div class="line">
+
+                </div>
+        </div>
+        <div class="middle">
+            <h2 class="h2">
+                Risk Management Analysis Using the PAVE Checklist</br>
+                使用PAVE检查单的风险管理分析
+            </h2>
+            <p class="text h2text">
+                By incorporating the PAVE checklist into preflight planning,
+                the pilot divides the risks of flight into four categories: <strong>P</strong>ilot-in-command (PIC),
+                <strong>A</strong>ircraft, en<strong>V</strong>ironment, and <strong>E</strong>xternal
+                pressures (PAVE) which form part of a pilot’s decision making process.
+            </p>
+            <p class="text h2text">
+                将PAVE检查单融入飞行前计划中，飞行员可将飞行中的风险分为四个部分：飞行员，飞机，环境，外部压力 （PAVE），是构成飞行员决策过程的一部分。
+            </p>
+            <p class="text h2text">
+                Once a pilot identifies the risks of a flight, he or she needs
+                to decide whether the risk, or combination of risks, can be
+                managed safely and successfully. If not, make the decision to
+                cancel the flight. If the pilot decides to continue with the flight,
+                he or she should develop strategies to mitigate the risks. One
+                way a pilot can control the risks is to set personal minimums
+                for items in each risk category. These are limits unique to that
+                individual pilot’s current level of experience and proficiency.
+            </p>
+            <p class="text h2text">
+                一旦飞行员识别出飞行的风险，他或她需要决定这些风险或风险的组合是否可以安全、成功地管理。如果不能，
+                就应当决定取消飞行。如果飞行员决定继续飞行，他或她应当制定减轻风险的策略。一种控制风险的方法是为每个
+                风险类别中的项目设定个人最低标准。这些限度是基于飞行员当前经验和熟练程度的独特的个人限制。
+            </p>
+            <p class="text h2text">
+                For example, the aircraft may have a maximum crosswind
+                component of 15 knots listed in the aircraft flight manual
+                (AFM), and the pilot has experience with 10 knots of direct
+                crosswind. It could be unsafe to exceed a 10 knot crosswind
+                component without additional training. Therefore, the 10 knot
+                crosswind experience level is that pilot’s personal limitation
+                until additional training with a certificated flight instructor
+                (CFI) provides the pilot with additional experience for flying
+                in crosswinds that exceed 10 knots.
+            </p>
+            <p class="text h2text">
+                例如，飞机飞
+                行手册（AFM）可能列出了飞机的最大侧风分量为15节，而飞行员的侧风经验为10节。在没有额外训练的情况下，
+                超出10节的侧风分量可能是不安全的。因此，这位飞行员的个人限度是10节，直到通过授权飞行教员（CFI）的额外训
+                练，使飞行员获得应对超过10节侧风的额外经验。
+            </p>
+            <p class="text h2text">
+                One of the most important concepts that safe pilots
+                understand is the difference between what is “legal” in terms
+                of the regulations, and what is “smart” or “safe” in terms of
+                pilot experience and proficiency.
+            </p>
+            <p class="text h2text">
+                安全的飞行员所理解的一个最重要的概念是，
+                法规所规定的“合法”与飞行员经验和熟练程度上
+                “明智”或“安全”之间的区别。
+            </p>
+            <h3 class="h3">
+                P = Pilot in Command (PIC) </br>
+                P = 飞行员
+            </h3>
+            <p class="text h3text">
+                The pilot is one of the risk factors in a flight. The pilot must
+                ask, “Am I ready for this trip?” in terms of experience,
+                recency, currency, physical, and emotional condition. The
+                IMSAFE checklist provides the answers.
+            </p>
+            <p class="text h3text">
+                飞行员是飞行中的一个风险因素。飞行员必须问自己：“我是否为这次飞行做好了准备？” 这包括经验、近期飞行记录、有效飞行资格、身体状况和情绪状态。<a href="IMSAFE.html"
+                    class="a">IMSAFE</a> 检查单提供了答案。
+            </p>
+            <h3 class="h3">
+                A = Aircraft </br>
+                A = 飞机
+            </h3>
+            <p class="text h3text">
+                What limitations will the aircraft impose upon the trip? Ask
+                the following questions:
+            </p>
+            <p class="text h3text">
+                飞机在旅途中将遇到什么限制？遵循如下问题：
+            </p>
+            <p class="text h3text">
+                &nbsp;&nbsp;<strong>1.</strong> &nbsp; Is this the right aircraft for the flight? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这是要飞的飞机吗？</br></br>
+                &nbsp;&nbsp;<strong>2.</strong> &nbsp; Am I familiar with and current in this aircraft? Aircraft
+                performance figures and the AFM are based on a brand
+                new aircraft flown by a professional test pilot. Keep
+                that in mind while assessing personal and aircraft
+                performance.</br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                我是否熟悉这架飞机并且有有效飞行资格？飞机的性能数据和飞机飞行手册（AFM）是基于由专业试飞员驾驶全新飞机得出的。在评估个人和飞机的性能时，请牢记这一点。</br></br>
+                &nbsp;&nbsp;<strong>3.</strong> &nbsp; Is this aircraft equipped for the flight? Instruments? 
+                Lights? Navigation and communication equipment 
+                adequate?</br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这架飞机的设备是否满足飞行要求？仪表？灯光？导航和通讯设备是否满足？</br></br>
+                &nbsp;&nbsp;<strong>4.</strong> &nbsp; Can this aircraft use the runways available for the trip 
+                with an adequate margin of safety under the conditions 
+                to be flown?</br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这架飞机在飞行中使用的跑道是否能在飞行条件下满足安全裕度？</br></br>
+                &nbsp;&nbsp;<strong>5.</strong> &nbsp; Can this aircraft carry the planned load? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这架飞机是否能载计划中的载重？</br></br>
+                &nbsp;&nbsp;<strong>6.</strong> &nbsp; Can this aircraft operate at the altitudes needed for the 
+                trip? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这架飞机是否能在飞行中要求的高度上运行？</br></br>
+                &nbsp;&nbsp;<strong>7.</strong> &nbsp; Does this aircraft have sufficient fuel capacity, with 
+                reserves, for trip legs planned? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这架飞机是否能载足够的燃油，并且有备用燃油，以完成计划飞行时段？</br></br>
+                &nbsp;&nbsp;<strong>8.</strong> &nbsp; Does the fuel quantity delivered match the fuel 
+                quantity ordered? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 飞机的实际加油量与报告的的加油量是否一致？</br></br>
+            </p>
+            <h3 class="h3">
+                V = EnVironment</br>
+                V = 环境
+            </h3>
+            <p class="text h3text">
+                Weather</br>
+                天气</br></br>
+                Weather is a major environmental consideration. Earlier it was 
+suggested pilots set their own personal minimums, especially 
+when it comes to weather. As pilots evaluate the weather for 
+a particular flight, they should consider the following:</br></br>
+                天气是环境的一个重要参考项，在行业早期，在环境方面，建议飞行员设定属于自己的最低标准，
+尤其是在天气方面，当飞行员为飞行做天气评估时，应当参考下面内容：</br></br>
+                &nbsp;&nbsp;<strong>1.</strong> &nbsp; What is the current ceiling and visibility? In 
+                mountainous terrain, consider having higher 
+                minimums for ceiling and visibility, particularly if 
+                the terrain is unfamiliar. </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当前云底高和能见度是多少？在山脉地形，应考虑提高云底高和能见度最低要求，
+            尤其是不熟悉的地形</br></br>
+                &nbsp;&nbsp;<strong>2.</strong> &nbsp; Consider the possibility that the weather may be 
+                different than forecast. Have alternative plans and 
+                be ready and willing to divert, should an unexpected 
+                change occur.</br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 考虑实际天气与预报天气不一致的可能性，制定预备计划并做好备降的准备，预防非预期的变化出现。
+                </br></br>
+                &nbsp;&nbsp;<strong>3.</strong> &nbsp; Consider the winds at the airports being used and the 
+                strength of the crosswind component.</br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 考虑机场的风，以及侧风分量的强度。</br></br>
+                &nbsp;&nbsp;<strong>4.</strong> &nbsp; If flying in mountainous terrain, consider whether 
+                there are strong winds aloft. Strong winds in 
+                mountainous terrain can cause severe turbulence and 
+                downdrafts and be very hazardous for aircraft even 
+                when there is no other significant weather.</br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果在山地飞行，考虑山地上空是否有强风。山地区域的强风会导致强烈的湍流和下降气流，尽管可能没有
+                其他明显天气，其依然严重危害飞行安全。<br></br>
+                &nbsp;&nbsp;<strong>5.</strong> &nbsp; Can this aircraft carry the planned load? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这架飞机是否能载计划中的载重？</br></br>
+                &nbsp;&nbsp;<strong>6.</strong> &nbsp; Can this aircraft operate at the altitudes needed for the 
+                trip? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这架飞机是否能在飞行中要求的高度上运行？</br></br>
+                &nbsp;&nbsp;<strong>7.</strong> &nbsp; Does this aircraft have sufficient fuel capacity, with 
+                reserves, for trip legs planned? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 这架飞机是否能载足够的燃油，并且有备用燃油，以完成计划飞行时段？</br></br>
+                &nbsp;&nbsp;<strong>8.</strong> &nbsp; Does the fuel quantity delivered match the fuel 
+                quantity ordered? </br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 飞机的实际加油量与报告的的加油量是否一致？</br></br>
+            </p>
+            <p class="text h2text">
+                As shown in Figure 1-1, the acronym
+                “PAVE” represents hazards that relate to the pilot, the aircraft, the environment, and external
+                pressures. The sample analysis
+                below describes how PAVE items may relate to the accident.
+            </p>
+            <p class="text h2text">
+                如图1-1，缩略语“PAVE”代表与飞行员，飞机，环境和外部压力有关的危险。下面的案例分析展示PAVE所包含的项目与事故的关联。
+            </p>
+            <div class="svgdiv">
+                <img src="rmp/" class="unselectable" draggable="false" oncontextmenu="return false;">
+            </div>
+            <p class="table" style="text-align: left;
+                      margin-top: 0;">
+                图1-1
+            </p>
+            <p class="text h2text">
+                The pilot reported to air traffic control (ATC) that the vacuum pump failed while in visual
+                meteorological conditions (VMC).
+                As a result, the attitude indicator and directional gyro became inoperative. Rather than divert to an
+                airport while in VMC, the
+                pilot decided to continue toward the destination and into instrument meteorological conditions (IMC).
+                This elevated the risks
+                associated with an “A” hazard because of the inoperative instruments and a “V” hazard because of the
+                IMC. After the vacuum pump failure, the pilot communicated with ATC that IMC would not be a problem,
+                which may indicate a hazardous attitude or
+                “P” hazard. It is unknown if an external pressure or “E” hazard factored in the pilot’s apparent desire
+                to get to the destination.
+            </p>
+            <p class="text h2text">
+                飞行员在目视气象条件（VMC）下向空中交通管制（ATC）报告真空泵故障。其失效导致姿态指示器和方向陀螺仪无法正常工作。
+                尽管如此，飞行员并没有在VMC条件下选择备降，而是决定继续朝目的地飞行，进入仪表气象条件（IMC）。由于仪表失效，
+                这增加了与“A”类危险相关的风险，而IMC的存在又增加了与“V”类危险相关的风险。在真空泵故障后，飞行员与ATC沟通表示
+                IMC不会成为问题，这可能表明飞行员存在一种危险的态度，或叫“P”类危险。目前尚不清楚是否有外部压力，或叫“E”类危险因素影响
+                了飞行员显然急于到达目的地的决定。
+            </p>
+            <p class="text h2text">
+                In this case, the pilot had the opportunity to change the outcome of the flight by diverting to an
+                airport while still in VMC. Several
+                reasons explain why pilots do not make appropriate decisions. Pilot error often results from an
+                over-estimate of capability, a
+                lack of preparation for flight, or a failure to prioritize safety. Varying levels of risk tolerance, or
+                even intentional disregard of
+                risk, may be a factor.
+            </p>
+            <p class="text h2text">
+                在这个案例中，飞行员本有机会通过转向另一个机场来改变飞行结果，当时他仍处于目视气象条件（VMC）下。
+                有几个原因可以解释为什么飞行员没有做出恰当的决定。飞行员错误通常源于对自己能力的高估、缺乏飞行准备，
+                或者未能优先考虑安全，不同程度的风险容忍度，甚至故意无视风险，也可能是因素之一。
+            </p>
+            <p class="text h2text">
+                Risk management training includes a variety of measures that change the way pilots perceive and deal
+                with hazards both before
+                and during a flight. This section will emphasize using risk management as a process to avoid situations
+                and decisions that
+                might lead to an aircraft accident.
+            </p>
+            <p class="text h2text">
+                风险管理培训包括一系列改变飞行员在飞行前和飞行中对危险的感知和应对方式的措施。此部分内容将强调使用风险管理作为一种流程，以避免导致航空事故的情况和决策。
+            </p>
+            <p class="text h2text">
+                Poor risk management is a cause of many accidents. Accordingly, pilots should emphasize risk management
+                in all types of
+                operations, from recreational flying to using aircraft for business.
+            </p>
+            <p class="text h2text">
+                风险管理不足是许多事故的原因，因此，飞行员在任何运行中都应当重视风险管理，无论是休闲飞行还是商业飞行。
+            </p>
+        </div>
+        <div class="right">
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+            <p>右侧内容</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+<!-- <div class="rightright">
+        <div style="display: block;
+                    margin-top: 70px;">
+            <button class="daohang hover">
+                <a href="markmap.html" class="daohangbutton hover">返回思维导图</a>
+            </button>
+        </div>
+        <div style="display: block;
+                    margin-top: 0px;">
+            <button class="daohangbelow hover">
+                <a href="index.html" class="daohangbutton hover">返回主页</a>
+            </button>
+        </div>
+    </div> -->

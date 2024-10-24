@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文字淡入淡出</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-top: 20px;
+    }
+
+    /* 隐藏复选框 */
+    .container input {
+      display: none;
+    }
+
+    /* 默认隐藏文字，display: none 使其不占空间 */
+    .fade-text {
+      opacity: 0;
+      display: none;
+      transition: opacity 1s ease-out; /* 淡出的持续时间 */
+    }
+
+    /* 使用 input:checked 触发文字的淡入效果 */
+    .container input:checked + .fade-text {
+      display: block;
+      opacity: 1;
+      transition: opacity 2s ease-in; /* 淡入的持续时间 */
+    }
+
+    /* 样式化的label用于点击触发复选框 */
+    .trigger {
+      cursor: pointer;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <label class="trigger" for="toggle-checkbox">Toggle Text</label>
+  <input type="checkbox" id="toggle-checkbox">
+  <p class="fade-text">这是淡入淡出的文字。</p>
+</div>
+
+</body>
+</html>
